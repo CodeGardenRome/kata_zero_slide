@@ -3,14 +3,14 @@ Kata Zero
 Sottotitolo 
 -----------
 
-### Perché il paradigma funzionale? --quel che segue è liberamente tratto dal primo paragrafo di Vitalij--  
+### Perché il paradigma funzionale? ~~quel che segue è liberamente tratto dal primo paragrafo di Vitalij~~
 * ~~esempio di assembly~~
 * ~~esempio di codice moderno imperativo~~
 * ~~esempio di classe verbosa: è importante iniziare a dire che la forma classica di programmazione OOP non è più leggibile di un linguaggio come Scala. Mostrando una classona e una piccola classe in scala si può dimostrare la verbosità dei linguaggi vecchio stile~~
 * ~~esempio di oggetto Scala: Scala mi sembra il miglior rappresentante da prendere ad esempio È più vicino ai linguaggi imperativi classici, haskell e il lisp/clj sono troppo funzionali...~~
 * La confluence del 2014 ~~la storia del FP potremmo raccontarla un po' per volta. Mi sembra interessante parlare della confluence in prima istanza per stimolare l'appetito. Qui in realtà bisognerebbe parlare del raggiunto limite della frequenza di clock dei procesori e citare un certo articolo che ha cambiato il corso della stora, ma potremmo farlo più avanti riprendendo l'argomento~~
 
-### Cos'è il paradigma funzionale? --vorrei introdurre l'argomento dal generale al particolare nel corso degli eventi--
+### Cos'è il paradigma funzionale? ~~vorrei introdurre l'argomento dal generale al particolare nel corso degli eventi~~
 * È un modo diverso di risolvere i problemi 
 * È una collezione di buone pratiche in più
 * Non richiede una Laurea in matematica!
