@@ -3,25 +3,39 @@ Kata Zero
 Sottotitolo 
 -----------
 
-### Perché il paradigma funzionale? ~~quel che segue è liberamente tratto dal primo paragrafo di Vitalij~~
-* ~~esempio di assembly~~
-* ~~esempio di codice moderno imperativo~~
-* ~~esempio di classe verbosa: è importante iniziare a dire che la forma classica di programmazione OOP non è più leggibile di un linguaggio come Scala. Mostrando una classona e una piccola classe in scala si può dimostrare la verbosità dei linguaggi vecchio stile~~
-* ~~esempio di oggetto Scala: Scala mi sembra il miglior rappresentante da prendere ad esempio È più vicino ai linguaggi imperativi classici, haskell e il lisp/clj sono troppo funzionali...~~
-* La confluence del 2014 ~~la storia del FP potremmo raccontarla un po' per volta. Mi sembra interessante parlare della confluence in prima istanza per stimolare l'appetito. Qui in realtà bisognerebbe parlare del raggiunto limite della frequenza di clock dei procesori e citare un certo articolo che ha cambiato il corso della stora, ma potremmo farlo più avanti riprendendo l'argomento~~
+### Lambda-Roma
+* Brevissima introduzione alla storia di FP
+* La Confluence - citiamo i big che sono passati, anche solo parzialmente, al funzionale
+* Sarebbe interessante anche citare le librerie come Redux e ImmutableJs
+* Citerei anche Java Lambda e le novità in arrivo, se ce ne sono, dell'ecosistema JVM
+* Trend dei linguaggi funzionali? 
+* Programma della community
+  * Lambda-Garden - workshop
+  * Talk sui linguaggi funzionali (?) 
 
-### Cos'è il paradigma funzionale? ~~vorrei introdurre l'argomento dal generale al particolare nel corso degli eventi~~
-* È un modo diverso di risolvere i problemi 
-* È una collezione di buone pratiche in più
-* Non richiede una Laurea in matematica!
-* Non manda in pensione il vostro know-how, ma lo arricchisce! 
-* Tutto sommato si potrebbe dire che il paradigma funzionale è una marcia in più, vedremo come dopo aver svolto i primi esercizi
-
-### Kata imperativi
-Esercizi  
+~~il titolo non mi piace~~
+### Cosa può fare il funzionale per voi? 
+* immutability
+  * introduzione del concetto
+  * immutability nei linguaggi (php, js, java)
+  * vorrei citare anche le rfc di php aperte sull'immutability 
+* side-effects (e side-causes), gli input e gli output celati nel sistema
+  * leggibilità: gli input e gli output nascosti ci impongono di interpretare completamente il codice
+  * test integrativi
+* purezza
+  * atomicità
+  * testabilità
+  * composizione
+  * autodocumentale
+  * modularità
 
 ### Toolbox! 
-* Ad ogni Lambda-garden arricchiremo la nostra "cassetta degli attrezzi" con nuovi strumenti. Molti sono già nella vostra toolbox da tempo e li utilizzate giornalmente. Alcuni di voi potrebbero scoprire che stanno già sfruttando il paradigma funzionale senza saperlo! 
+* Concetti
+  * Function Composition
+  * Immutability
+  * Purity
+  * Side Effects
+  * Side Causes
 * Nella nostra toolbox oggi inseriamo le high order function principali:
   * Map
   * Filter
@@ -31,5 +45,4 @@ Esercizi
 * ~~esempio di filter~~ Filter restituisce una nuova lista creata da tutti quegli elementi che hanno soddisfatto un criterio. Il criterio è un'espressione booleana, risultato della lambda. 
 * ~~esempio di reduce~~ Reduce ha un terzo argomento: l'accumulatore. Permette di *sintetizzare* gli elementi della lista "accumulando" un unico risultato all'interno dell'accumulatore. Vedremo che è possibile generare con reduce anche più risultati se l'accumulatore dovesse essere una lista o una mappa. 
 
-### Kata funzionali
-
+### Katas
