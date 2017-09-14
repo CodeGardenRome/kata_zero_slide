@@ -4,30 +4,50 @@ Sottotitolo
 -----------
 
 ### Lambda-Roma
-* Brevissima introduzione alla storia di FP
-* La Confluence - citiamo i big che sono passati, anche solo parzialmente, al funzionale
-* Sarebbe interessante anche citare le librerie come Redux e ImmutableJs
-* Citerei anche Java Lambda e le novità in arrivo, se ce ne sono, dell'ecosistema JVM
+* Un po' di storia
+  * Turing machine 
+  * Church e il lambda calculus - tesi Church-Turing
+  * Von Neumann (architettura)
+* La Confluence
+  * Amazon, Citigroup, eBay, Facebook, Groupon, Heroku, Netflix, Oracle, Pivotal Labs, Red Hat, Salesforce, Spotify, ThoughtWorks, Wikidocs, Atlassian, Zalando, Zendesk, AT&T, Bank of America Merril Lynch, Barclays, Credit Suisse, Deutsche Bank, Ericsson AB, Google, Intel, Microsoft, The New York Times, NVIDIA, Qualcomm Inc, IBM, Starbucks, Weightwatchers, Accenture, LinkedIn, Verizon, Walmart, Hawlett Packard, SAP, Morgan Stanley, ING, Electronic Arts, Panasonic, Huawei, Apple, Unicredit
+* Frameworks & Libraries
+  * Redux
+  * Reflex
+  * ImmutableJs
+  * Elm
+  * Java 8+ 
+  * PHP rfc
+  * DevOps: Serverless architecture - AWS Lambda - Immutable infrastructure (Docker)
+  * Mobile: Swift e Kotlin
 * Trend dei linguaggi funzionali? 
+  * Surv 2017 stack overflow
+  * Indeed
 * Programma della community
   * Lambda-Garden - workshop
   * Talk sui linguaggi funzionali (?) 
 
-~~il titolo non mi piace~~
-### Cosa può fare il funzionale per voi? 
+### Ma che ce famo cor funzionale? 
+* First Class Citizen
+  * abstraction
+  * favor composition over inheritance
+  * composition di funzioni 
+  * esempio codice
 * immutability
-  * introduzione del concetto
-  * immutability nei linguaggi (php, js, java)
-  * vorrei citare anche le rfc di php aperte sull'immutability 
+  * l'immutability come buona pratica - PHP, Java, Javascript stanno implementando l'immutability
+  * Alan Key - The Early History of Smalltalk 1993
+  * Effective Java - Joshua Bloch 2001 
+  * Esempi: 
+    * Perché facciamo defensive copying? 
+    * Date, Valute
+    * Concurrency
+  * Lo stato dell'immutability nei linguaggi (php, js, java)
 * side-effects (e side-causes), gli input e gli output celati nel sistema
   * leggibilità: gli input e gli output nascosti ci impongono di interpretare completamente il codice
   * test integrativi
 * purezza
   * atomicità
   * testabilità
-  * composizione
   * autodocumentale
-  * modularità
 
 ### Toolbox! 
 * Concetti
