@@ -183,7 +183,7 @@ case class IMUComputation(
 }
 ```
 *Usando solo funzioni*
-```scala6
+```scala
 //or with simple plain functions
 val baseOnRevenue: Double => Double
 val baseDiscount: Option[Double => Double]
