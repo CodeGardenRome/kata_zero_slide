@@ -5,7 +5,7 @@ Sottotitolo
 
 ### Lambda-Roma
 * Un po' di storia
-  * Turing machine 
+  * Turing machine (Benedict Cumberbach) 
   * Church e il lambda calculus - tesi Church-Turing
   * Von Neumann (architettura)
 * La Confluence
@@ -28,26 +28,33 @@ Sottotitolo
 
 ### Ma che ce famo cor funzionale? 
 * First Class Citizen
+<<<<<<< HEAD
   * abstraction
   * favor composition over inheritance [inserisci una funzionalita' come componente innestato, ma puo' essere semplicemente una funzione cfr. $Esempi]
   * composition di funzioni [senza nemmeno creare l'oggetto contenitore, posso creare una funzione da altre, come pipeline di elaborazione cfr. $Esempi]
+=======
+  * abstraction (da discutere un po' di più)
+  * favor composition over inheritance
+  * composition di funzioni 
+>>>>>>> istallato revealjs
   * esempio codice
 * immutability
-  * l'immutability come buona pratica - PHP, Java, Javascript stanno implementando l'immutability
+  * l'immutability come buona pratica - PHP, Java, Javascript stanno implementando l'immutability 
   * Alan Key - The Early History of Smalltalk 1993
   * Effective Java - Joshua Bloch 2001 
   * Esempi: 
     * Perché facciamo defensive copying? 
     * Date, Valute
     * Concurrency
-  * Lo stato dell'immutability nei linguaggi (php, js, java)
 * side-effects (e side-causes), gli input e gli output celati nel sistema
   * leggibilità: gli input e gli output nascosti ci impongono di interpretare completamente il codice
+  * dependency injection 
   * test integrativi
 * purezza
   * atomicità
   * testabilità
   * autodocumentale
+  * principio di singola responsabilità
 
 ### Toolbox! 
 * Concetti
