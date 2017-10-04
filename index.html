@@ -143,22 +143,6 @@
                 data-background-size="200px"
                 data-background-position="0px 0px">
                 <h2>Redux</h2>
-            </section>
-            <section
-                data-background-color="#f4dc38"
-                data-background-image="asset/logo_js.png"
-                data-background-size="200px"
-                data-background-position="0px 0px"
-            >
-                <h2>Reflex</h2>
-            </section>
-            <section
-                data-background-color="#f4dc38"
-                data-background-color="#f4dc38"
-                data-background-image="asset/logo_js.png"
-                data-background-size="200px"
-                data-background-position="0px 0px"
-            >
                 <h2>Immutable Js</h2>
             </section>
             <section
@@ -172,17 +156,22 @@
                 <h2>Laravel Collection</h2>
             </section>
             <section
+<<<<<<< HEAD
                 data-background-color="#64b5cb"
             >
                 <h2>Elm</h2>
             </section>
             <section
                 data-background-color="saddlebrown"
+=======
+                data-background-color="#f46720"
+>>>>>>> completo o quasi fino alla sezione hands on
                 data-background-image="asset/logo_java.png"
                 data-background-size="200px"
                 data-background-position="10px 10px"
             >
-                <h2>Java 8+</h2>
+                <h2>Vavr</h2>
+                <h2>Spring WebFlux</h2>
             </section>
             <section
                 data-background-color="#1a9cc4"
@@ -190,35 +179,55 @@
                 data-background-size="200px"
                 data-background-position="10px 10px"
             >
+                <h2>Immutable Infrastructure</h2>
                 <h2>Serveless architecture</h2>
-                <ul>
-                    <li>AWS Lambda</li>
-                    <li>Immutable Infrastructure</li>
-                </ul>
+                <p>(es: AWS Lambda)</p>
             </section>
             <section
-                data-background-image="asset/sfondo_mobile.jpg"
+                data-background-image="asset/logo_mobile.png"
+                data-background-size="200px"
+                data-background-position="10px 10px"
             >
-                <p style="color:black">Mobile apps</p>
-                <h2 style="color:black">Da Java e Objective-C...</h2>
-                <h2 style="color:black">a Kotlin e Swift</h2>
+                <h2>Da Java e Objective-C...</h2>
+                <h2>...a Kotlin e Swift</h2>
+                <p>Dal massimo dell'OOP a due linguaggi di ispirazione funzionali</p>
             </section>
         </section>
         <section>
             <section>
-                <h2>Ma i linguaggi funzionali?</h2>
+                <h2>E poi ci sono i linguaggi funzionali</h2>
+                <p>...o anche di ispirazione funzionale.</p>
             </section>
+            <section>
+                <p>Tanto per citarne alcuni:</p>
+                <p>Haskell, Scala, Clojure/Clojurescript, Elixir, Elm, Rust, Swift, Kotlin, ecc...</p>
+            </section>
+<<<<<<< HEAD
       <section>
                 Trend dei linguaggi funzionali?
+=======
+				    <section>
+                <h2>Trend dei linguaggi funzionali</h2>
+>>>>>>> completo o quasi fino alla sezione hands on
+            </section>
+            <section>
+                <h3>Effort richeisto</h3>
+                <p>fonte: stack overflow</p>
+            </section>
+            <section>
+                <h3>Salario/Esperienza</h3>
+                <image src="asset/grafici/salario_esperienza_by_language.png" style="width:70%;height:70%" />
+                <p>fonte: stack overflow</p>
+            </section>
+            <section>
+                <h3>Gratificazione</h3>
+                <image src="asset/grafici/gratification_by_language.png" style="width:70%;height:70%" />
             </section>
         </section>
         <section>
             <section>
-                <h2>Lambda-Roma<h2>
-            </section>
-            <section>
                 <p>Lambda-Roma</p>
-                <h2>Programma della community</h2>
+                <h2>Programma di community</h2>
             </section>
             <section>
                 <p>Programma della community</p>
@@ -232,11 +241,18 @@
                 <p>Talk e approfondimenti sui linguaggi Funzionali</p>
                 <p>Scala, Clojure, Haskell, etc...</p>
             </section>
+            <section>
+                <p>Programma della community</p>
+                <h2>Lambda-Incidents</h2>
+                <p>Meeting con altre community</p>
+                <p>Talk sul devop ispirato ai concetti funzionali</p>
+            </section>
         </section>
         <section>
             <section>
                 <h2>Hands On!</h2>
             </section>
+<<<<<<< HEAD
             <section>First Class Citizen</section>
       <section>Immutability</section>
       <section>Side-effects (e side-causes)</section>
@@ -246,6 +262,52 @@
       <section>Toolbox!</section>
       <section>Concetti</section>
       <section>High Order Function principali</section>
+=======
+            <section>
+                First Class Citizen
+            </section>
+				    <section>
+                Immutability
+            </section>
+				    <section>
+                Side-effects (e side-causes)
+            </section>
+				    <section>
+                Purezza
+            </section>
+        </section>
+        <section>
+				    <section>
+                <h2>Toolbox!</h2>
+            </section>
+				    <section>
+                <p>Concetti</p>
+                <ul>
+                    <li>First Class Citizen</li>
+                    <li>Immutability</li>
+                    <li>Side-effects</li>
+                    <li>Funzioni Pure</li>
+                </ul>
+            </section>
+				    <section>
+                <p>High Order Function base</p>
+                <p>Le high order function sono funzioni che accettano almeno due parametri: una funzione anonima (lambda) e una lista di elementi</p>
+                <p>La lambda sarà applicata a ogni elemento della lista</p>
+                <p>La natura della high order function è determinata da come *decora* la lambda in input</p>
+            </section>
+            <section>
+                <h2>Map</h2>
+                <p class="fragment fade-in">black box array in entrata, lambda, array in uscita, lambda nella box</p>
+            </section>
+            <section>
+                <h2>Filter</h2>
+                <p class="fragment fade-in">black box: array in entrata, lambda, array in uscita, bool nella box</p>
+            </section>
+            <section>
+                <h2>Reduce</h2>
+                <p class="fragment fade-in">black box: array in entrata, lambda, tipo carry, tipo in uscita, lambda nel box</p>
+            </section>
+>>>>>>> completo o quasi fino alla sezione hands on
         </section>
         <section>
       <section id="katas">
