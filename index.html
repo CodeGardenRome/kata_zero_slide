@@ -300,6 +300,30 @@
     }
     </code></pre>
   </section>
+  <section id="ZeroAJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroAJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public List<Integer> kataZeroA() {
+        return Stream.of(1,2,3)
+                .collect(Collectors.toList());
+    }
+  </code></pre>
+  </section>
   <section id="ZeroB">
   <h2>Zero B</h2>
   Restituisci una lista contenente i numeri pari tra 1 e 10
@@ -339,6 +363,32 @@
           return $out;
       }
     </code></pre>
+  </section>
+  <section id="ZeroBJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroBJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public List<Integer> kataZeroB() {
+        return Stream.iterate(2, i -> i + 2 )
+                .limit(50l)
+                .filter(i -> i <= 10)
+                .collect(Collectors.toList());
+    }
+  </code></pre>
   </section>
   <section id="ZeroC">
   <h2>Zero C</h2>
@@ -380,6 +430,32 @@
       }
 
     </code></pre>
+  </section>
+  <section id="ZeroCJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroCJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public List<Integer> kataZeroC() {
+        return Stream.iterate(0, i -> i + 7 )
+                .limit(50l)
+                .filter(i -> i < 100)
+                .collect(Collectors.toList());
+    }
+  </code></pre>
   </section>
   <section id="ZeroD">
   <h2>Zero D</h2>
@@ -427,6 +503,31 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroDJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroDJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public List<String> kataZeroD() {
+        return ELENCO_UOMINI.stream()
+                .filter(s -> s.startsWith("C"))
+                .collect(Collectors.toList());
+    }
+  </code></pre>
+  </section>
   <section id="ZeroE">
   <h2>Zero E</h2>
   Calcolare la media dei multipli di 8 compresi tra 1 e 100
@@ -471,6 +572,33 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroEJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroEJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public Double kataZeroE() {
+        return DoubleStream.iterate(8, i -> i + 8.0D)
+                .limit(100l)
+                .filter(i -> i < 100.0D)
+                .average()
+                .getAsDouble();
+    }
+  </code></pre>
+  </section>
   <section id="ZeroF">
   <h2>Zero F</h2>
   Calcolare la somma dei multipli di 6 compresi tra 1 e 1000
@@ -511,6 +639,32 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroFJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroFJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public int kataZeroF() {
+        return IntStream.iterate(0, i -> i + 6)
+                .limit(1000l)
+                .filter(i -> i < 1000)
+                .sum();
+    }
+  </code></pre>
+  </section>
   <section id="ZeroG">
   <h2>Zero G</h2>
   Dall'elenco degli uomini, restituisci una lista con i nomi ordinati alfabeticamente
@@ -546,6 +700,31 @@
           return $menNames;
       }
     </code></pre>
+  </section>
+  <section id="ZeroGJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroGJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public List<String> kataZeroG() {
+        return ELENCO_UOMINI.stream()
+                .sorted()
+                .collect(Collectors.toList());
+    }
+  </code></pre>
   </section>
   <section id="ZeroH">
   <h2>Zero H</h2>
@@ -592,6 +771,33 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroHJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroHJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public int kataZeroH() {
+        return IntStream.range(0,1000)
+                .parallel()
+                .filter(i -> i % 41 == 0)
+                .findAny()
+                .getAsInt();
+    }
+  </code></pre>
+  </section>
   <section id="ZeroI">
   <h2>Zero I</h2>
   Dall'elenco degli uomini, restituisci la stringa che li elenca intervallati da virgola e spazio
@@ -630,6 +836,31 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroIJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroIJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public String kataZeroI() {
+        return ELENCO_UOMINI
+                .stream()
+                .collect(Collectors.joining(", "));
+    }
+  </code></pre>
+  </section>
   <section id="ZeroJ">
   <h2>Zero J</h2>
   Dall'elenco degli uomini, creare un insieme (set)
@@ -664,6 +895,30 @@
           return array_unique($menNames);
       }
     </code></pre>
+  </section>
+  <section id="ZeroJJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroJJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public Set<String> kataZeroJ() {
+        return ELENCO_UOMINI.stream()
+                .collect(Collectors.toSet());
+    }
+  </code></pre>
   </section>
   <section id="ZeroK">
   <h2>Zero K</h2>
@@ -719,6 +974,30 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroKJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroKJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public Map&lt;Integer, List&lt;String>> kataZeroK() {
+        return ELENCO_DONNE.stream()
+                .collect(Collectors.groupingBy(s -> s.length()));
+    }
+  </code></pre>
+  </section>
   <section id="ZeroL">
   <h2>Zero L</h2>
   Dall'elenco delle donne, restituisci una lista contenente le lunghezze dei loro nomi
@@ -760,6 +1039,31 @@
           return $out;
       }
     </code></pre>
+  </section>
+  <section id="ZeroLJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroLJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public List<Integer> kataZeroL() {
+        return ELENCO_DONNE.stream()
+                .map(s -> s.length())
+                .collect(Collectors.toList());
+    }
+  </code></pre>
   </section>
   <section id="ZeroM">
   <h2>Zero M</h2>
@@ -803,6 +1107,31 @@
           return $out;
       }
     </code></pre>
+  </section>
+  <section id="ZeroMJSImperativo"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione imperativa in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      // TODO
+    </code></pre>
+  </section>
+  <section id="ZeroMJavaFunzionale"
+  data-background-color="saddlebrown"
+  data-background-image="asset/logo_java.png"
+  data-background-size="200px"
+  data-background-position="10px 10px">
+  <h3>Soluzione funzionale in Java</h3>
+  <pre><code data-trim data-noescape class="java">
+    public List<String> kataZeroM() {
+        return ELENCO_DONNE.stream()
+                .map(s -> s.substring(0,1))
+                .collect(Collectors.toList());
+    }
+  </code></pre>
   </section>
   </section>
   </div>
