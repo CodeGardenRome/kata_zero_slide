@@ -324,6 +324,22 @@
     }
   </code></pre>
   </section>
+  <section id="ZeroAPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @return array
+       */
+      public function kataZeroA(): array
+      {
+          return range(1, 3);
+      }
+    </code></pre>
+  </section>
   <section id="ZeroB">
   <h2>Zero B</h2>
   Restituisci una lista contenente i numeri pari tra 1 e 10
@@ -389,6 +405,22 @@
                 .collect(Collectors.toList());
     }
   </code></pre>
+  </section>
+  <section id="ZeroBPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @return array
+       */
+      public function kataZeroB(): array
+      {
+          return range(0, 10, 2);
+      }
+    </code></pre>
   </section>
   <section id="ZeroC">
   <h2>Zero C</h2>
@@ -456,6 +488,22 @@
                 .collect(Collectors.toList());
     }
   </code></pre>
+  </section>
+  <section id="ZeroCPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @return array
+       */
+      public function kataZeroC(): array
+      {
+          return range(7, 100, 7);
+      }
+    </code></pre>
   </section>
   <section id="ZeroD">
   <h2>Zero D</h2>
@@ -528,6 +576,25 @@
     }
   </code></pre>
   </section>
+  <section id="ZeroDPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @param array $menNames
+       * @return array
+       */
+      public function kataZeroD(array $menNames): array
+      {
+          return array_values(array_filter($menNames, function ($item) {
+              return strtolower($item[0]) === 'c';
+          }));
+      }
+    </code></pre>
+  </section>
   <section id="ZeroE">
   <h2>Zero E</h2>
   Calcolare la media dei multipli di 8 compresi tra 1 e 100
@@ -599,6 +666,23 @@
     }
   </code></pre>
   </section>
+  <section id="ZeroEPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @return int
+       */
+      public function kataZeroE(): int
+      {
+          $range = range(8, 100, 8);
+          return array_sum($range) / count($range);
+      }
+    </code></pre>
+  </section>
   <section id="ZeroF">
   <h2>Zero F</h2>
   Calcolare la somma dei multipli di 6 compresi tra 1 e 1000
@@ -665,6 +749,22 @@
     }
   </code></pre>
   </section>
+  <section id="ZeroFPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @return int
+       */
+      public function kataZeroF(): int
+      {
+          return array_sum(range(6, 1000, 6));
+      }
+    </code></pre>
+  </section>
   <section id="ZeroG">
   <h2>Zero G</h2>
   Dall'elenco degli uomini, restituisci una lista con i nomi ordinati alfabeticamente
@@ -725,6 +825,25 @@
                 .collect(Collectors.toList());
     }
   </code></pre>
+  </section>
+  <section id="ZeroGPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @param array $menNames
+       * @return array
+       */
+      public function kataZeroG(array $menNames): array
+      {
+          $menNamesToSort = $menNames;
+          sort($menNamesToSort);
+          return $menNamesToSort;
+      }
+    </code></pre>
   </section>
   <section id="ZeroH">
   <h2>Zero H</h2>
@@ -798,6 +917,23 @@
     }
   </code></pre>
   </section>
+  <section id="ZeroHPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @return int
+       */
+      public function kataZeroH(): int
+      {
+          $range = range(41, 1000, 41);
+          return $range[array_rand($range)];
+      }
+    </code></pre>
+  </section>
   <section id="ZeroI">
   <h2>Zero I</h2>
   Dall'elenco degli uomini, restituisci la stringa che li elenca intervallati da virgola e spazio
@@ -861,6 +997,23 @@
     }
   </code></pre>
   </section>
+  <section id="ZeroIPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @param array $menNames
+       * @return string
+       */
+      public function kataZeroI(array $menNames): string
+      {
+          return implode(', ', $menNames);
+      }
+    </code></pre>
+  </section>
   <section id="ZeroJ">
   <h2>Zero J</h2>
   Dall'elenco degli uomini, creare un insieme (set)
@@ -919,6 +1072,23 @@
                 .collect(Collectors.toSet());
     }
   </code></pre>
+  </section>
+  <section id="ZeroJPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @param array $menNames
+       * @return array
+       */
+      public function kataZeroJ(array $menNames): array
+      {
+          return array_unique($menNames);
+      }
+    </code></pre>
   </section>
   <section id="ZeroK">
   <h2>Zero K</h2>
@@ -998,6 +1168,29 @@
     }
   </code></pre>
   </section>
+  <section id="ZeroKPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @param array $womenNames
+       * @return array
+       */
+      public function kataZeroK(array $womenNames): array
+      {
+          return array_reduce($womenNames, function ($carry, $item) {
+              $index = strlen($item);
+              $carry[$index] = isset($carry[$index])
+                  ? array_merge($carry[$index], [$item])
+                  : [$item];
+              return $carry;
+          }, []);
+      }
+    </code></pre>
+  </section>
   <section id="ZeroL">
   <h2>Zero L</h2>
   Dall'elenco delle donne, restituisci una lista contenente le lunghezze dei loro nomi
@@ -1064,6 +1257,25 @@
                 .collect(Collectors.toList());
     }
   </code></pre>
+  </section>
+  <section id="ZeroLPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @param array $womenNames
+       * @return array
+       */
+      public function kataZeroL(array $womenNames): array
+      {
+          return array_map(function ($item) {
+              return strlen($item);
+          }, $womenNames);
+      }
+    </code></pre>
   </section>
   <section id="ZeroM">
   <h2>Zero M</h2>
@@ -1132,6 +1344,25 @@
                 .collect(Collectors.toList());
     }
   </code></pre>
+  </section>
+  <section id="ZeroMPHPFunzionale"
+    data-background-color="#777cb1"
+    data-background-image="asset/logo_php.png"
+    data-background-size="200px"
+    data-background-position="10px 10px">
+    <h3>Soluzione funzionale in PHP</h3>
+    <pre><code data-trim data-noescape class="php">
+      /**
+       * @param $womenNames
+       * @return array
+       */
+      public function kataZeroM($womenNames): array
+      {
+          return array_map(function ($item) {
+              return $item[0];
+          }, $womenNames);
+      }
+    </code></pre>
   </section>
   </section>
   </div>
