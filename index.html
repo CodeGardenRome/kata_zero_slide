@@ -340,6 +340,26 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroAJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      import _ from 'lodash';
+      import {
+          List,
+          Range,
+          Set
+      } from 'immutable';
+
+      export const ZeroA = () => {
+          return _.range(1, 4);
+      };
+    </code></pre>
+  </section>
   <section id="ZeroB">
   <h2>Zero B</h2>
   Restituisci una lista contenente i numeri pari tra 1 e 10
@@ -420,6 +440,19 @@
       {
           return range(0, 10, 2);
       }
+    </code></pre>
+  </section>
+  <section id="ZeroBJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroB = () => {
+          return _.range(2, 10, 2);
+      };
     </code></pre>
   </section>
   <section id="ZeroC">
@@ -503,6 +536,19 @@
       {
           return range(7, 100, 7);
       }
+    </code></pre>
+  </section>
+  <section id="ZeroCJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroC = () => {
+          return _.range(7, 100, 7);
+      };
     </code></pre>
   </section>
   <section id="ZeroD">
@@ -595,6 +641,19 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroDJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroD = uomini => {
+          return _.filter(uomini, (s) => s.startsWith("C"));
+      };
+    </code></pre>
+  </section>
   <section id="ZeroE">
   <h2>Zero E</h2>
   Calcolare la media dei multipli di 8 compresi tra 1 e 100
@@ -683,6 +742,19 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroEJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroE = () => {
+          return _.mean(_.range(8, 100, 8));
+      };
+    </code></pre>
+  </section>
   <section id="ZeroF">
   <h2>Zero F</h2>
   Calcolare la somma dei multipli di 6 compresi tra 1 e 1000
@@ -765,6 +837,19 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroFJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroF = () => {
+          return _.sum(_.range(6, 1000, 6));
+      };
+    </code></pre>
+  </section>
   <section id="ZeroG">
   <h2>Zero G</h2>
   Dall'elenco degli uomini, restituisci una lista con i nomi ordinati alfabeticamente
@@ -843,6 +928,19 @@
           sort($menNamesToSort);
           return $menNamesToSort;
       }
+    </code></pre>
+  </section>
+  <section id="ZeroGJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroG = uomini => {
+          return List(uomini).sort();
+      };
     </code></pre>
   </section>
   <section id="ZeroH">
@@ -934,6 +1032,20 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroHJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroH = () => {
+          const range = Range(41, 1000, 41);
+          return range.get(_.random(0, range.count() - 1));
+      };
+    </code></pre>
+  </section>
   <section id="ZeroI">
   <h2>Zero I</h2>
   Dall'elenco degli uomini, restituisci la stringa che li elenca intervallati da virgola e spazio
@@ -1014,6 +1126,19 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroIJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroI = uomini => {
+          return List(uomini).join(', ');
+      };
+    </code></pre>
+  </section>
   <section id="ZeroJ">
   <h2>Zero J</h2>
   Dall'elenco degli uomini, creare un insieme (set)
@@ -1088,6 +1213,19 @@
       {
           return array_unique($menNames);
       }
+    </code></pre>
+  </section>
+  <section id="ZeroJJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroJ = uomini => {
+          return Set(uomini);
+      };
     </code></pre>
   </section>
   <section id="ZeroK">
@@ -1191,6 +1329,19 @@
       }
     </code></pre>
   </section>
+  <section id="ZeroKJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroK = donne => {
+          return List(donne).groupBy(x => x.length.toString());
+      };
+    </code></pre>
+  </section>
   <section id="ZeroL">
   <h2>Zero L</h2>
   Dall'elenco delle donne, restituisci una lista contenente le lunghezze dei loro nomi
@@ -1275,6 +1426,19 @@
               return strlen($item);
           }, $womenNames);
       }
+    </code></pre>
+  </section>
+  <section id="ZeroLJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroL = donne => {
+          return List(donne).map(x => x.length);
+      };
     </code></pre>
   </section>
   <section id="ZeroM">
@@ -1362,6 +1526,19 @@
               return $item[0];
           }, $womenNames);
       }
+    </code></pre>
+  </section>
+  <section id="ZeroMJSFunzionale"
+  data-background-color="#f4dc38"
+  data-background-color="#f4dc38"
+  data-background-image="asset/logo_js.png"
+  data-background-size="200px"
+  data-background-position="0px 0px">
+    <h3>Soluzione funzionale in JavaScript</h3>
+    <pre><code data-trim data-noescape class="javascript">
+      export const ZeroM = donne => {
+          return List(donne).map(x => x[0]);
+      };
     </code></pre>
   </section>
   </section>
