@@ -42,7 +42,7 @@ Sottotitolo
   * favor composition over inheritance [inserisci una funzionalita' come componente innestato, ma puo' essere semplicemente una funzione cfr. $Esempi]
   * composition di funzioni [senza nemmeno creare l'oggetto contenitore, posso creare una funzione da altre, come pipeline di elaborazione cfr. $Esempi]
   * esempio codice
-* immutability
+* Immutability
   * l'immutability come buona pratica 
     * PHP 
       * RFC https://wiki.php.net/rfc/immutability
@@ -82,11 +82,11 @@ public final class Planet {
     * Date, Valute
     * Value Objects
     * Concurrency
-* side-effects (e side-causes), gli input e gli output celati nel sistema
+* Side-effects (e side-causes), gli input e gli output celati nel sistema
   * leggibilità: gli input e gli output nascosti ci impongono di interpretare completamente il codice
   * dependency injection 
   * test integrativi
-* purezza
+* Purezza
   * atomicità
   * testabilità
   * autodocumentale
@@ -181,7 +181,7 @@ $res = PurityExample::pow(2, 2); // $res = 4
   * Purity
   * Side Effects
   * Side Causes
-* Nella nostra toolbox oggi inseriamo le high order function principali:
+* Nella nostra toolbox oggi inseriamo le High Order Function principali:
   * Map
   * Filter
   * Reduce
