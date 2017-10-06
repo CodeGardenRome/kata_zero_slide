@@ -354,12 +354,30 @@ public final class Planet {
                         <p class="fragment fade-in">black box array in entrata, lambda, array in uscita, lambda nella box</p>
                     </section>
                     <section>
+                        <h2>Esempio di Map</h2>
+                        <p class="fragment fade-in">Ho un vettore <code>A</code> che vale <code>[1, 2, 3]</code></p>
+                        <p class="fragment fade-in">Ho una lambda che aggiunge 2 ad un numero</p>
+                        <p class="fragment fade-in">Se faccio <br/><code>map( A, x -> x + 2 )</code><br> ottengo <br><code>[3, 4, 5]</code></p>
+                    </section>
+                    <section>
                         <h2>Filter</h2>
                         <p class="fragment fade-in">black box: array in entrata, lambda, array in uscita, bool nella box</p>
                     </section>
                     <section>
+                        <h2>Esempio di filter</h2>
+                        <p class="fragment fade-in">Ho un vettore <code>B</code> che vale <code>[1, 2, 3, 4]</code></p>
+                        <p class="fragment fade-in">Ho una lambda che restituisce <code>true</code> se il numero è pari, <code>false</code> altrimenti</p>
+                        <p class="fragment fade-in">Se faccio<br/><code>filter( B, x -> x % 2 == 0 )</code><br/> ottengo<br/><code>[2, 4]</code></p>
+                    </section>
+                    <section>
                         <h2>Reduce</h2>
                         <p class="fragment fade-in">black box: array in entrata, lambda, tipo carry, tipo in uscita, lambda nel box</p>
+                    </section>
+                    <section>
+                        <h2>Esempio di Redice</h2>
+                        <p class="fragment fade-in">Ho un vettore <code>A</code> che vale <code>[1, 2, 3]</code></p>
+                        <p class="fragment fade-in">Ho una lambda che, data la somma parziale e l'elemento corrente, produce una nuova somma</p>
+                        <p class="fragment fade-in">Se faccio<br/><code>reduce( A, (s,x) -> s+x )</code> ottengo <code>6</code></p>
                     </section>
                 </section>
                 <section>
