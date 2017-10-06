@@ -348,13 +348,13 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code data-trim data-noescape class="java">
-  public List<Integer> kataZeroA(){
+                          public List<Integer> kataZeroA(){
                             List<Integer> lista = new ArrayList<>();
                             for(Integer i=1; i<=3; i++){
-                            lista.add(i);
+                              lista.add(i);
                             }
                             return lista;
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroAPHPImperativo"
@@ -364,18 +364,18 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in PHP</h3>
                         <pre><code data-trim data-noescape class="php">
-    /**
-     * @return array
-     */
-    public function kataZeroA(): array
-    {
-        $out = [];
-        for ($i = 1; $i <= 3; $i++) {
-            array_push($out, $i);
-        }
+                          /**
+                           * @return array
+                           */
+                          public function kataZeroA(): array
+                          {
+                              $out = [];
+                              for ($i = 1; $i <= 3; $i++) {
+                                  array_push($out, $i);
+                              }
 
-        return $out;
-    }
+                              return $out;
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroAJSImperativo"
@@ -386,14 +386,14 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione imperativa in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      export const ZeroA = () => {
-          let out = [];
-          for (let i = 1; i <= 3; i++) {
-              out.push(i);
-          }
+                          export const ZeroA = () => {
+                              let out = [];
+                              for (let i = 1; i <= 3; i++) {
+                                  out.push(i);
+                              }
 
-          return out;
-      };
+                              return out;
+                          };
                         </code></pre>
                     </section>
                     <section id="ZeroAJavaFunzionale"
@@ -403,10 +403,10 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in Java</h3>
                         <pre><code data-trim data-noescape class="java">
-    public List<Integer> kataZeroA() {
+                          public List<Integer> kataZeroA() {
                             return Stream.of(1,2,3)
-                            .collect(Collectors.toList());
-                            }
+                                .collect(Collectors.toList());
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroAPHPFunzionale"
@@ -416,13 +416,13 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in PHP</h3>
                         <pre><code data-trim data-noescape class="php">
-      /**
-       * @return array
-       */
-      public function kataZeroA(): array
-      {
-          return range(1, 3);
-      }
+                          /**
+                           * @return array
+                           */
+                          public function kataZeroA(): array
+                          {
+                              return range(1, 3);
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroAJSFunzionale"
@@ -433,16 +433,16 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione funzionale in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      import _ from 'lodash';
-      import {
-          List,
-          Range,
-          Set
-      } from 'immutable';
+                          import _ from 'lodash';
+                          import {
+                              List,
+                              Range,
+                              Set
+                          } from 'immutable';
 
-      export const ZeroA = () => {
-          return _.range(1, 4);
-      };
+                          export const ZeroA = () => {
+                              return _.range(1, 4);
+                          };
                         </code></pre>
                     </section>
                     <section id="ZeroB">
@@ -456,13 +456,13 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code class="java" data-trim data-noescape>
-  public List<Integer> kataZeroB(){
+                          public List<Integer> kataZeroB(){
                             List<Integer> lista = new ArrayList<>();
                             for(Integer i=2; i<=10; i+=2){
-                            lista.add(i);
+                              lista.add(i);
                             }
                             return lista;
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroBPHPImperativo"
@@ -472,17 +472,17 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in PHP</h3>
                         <pre><code data-trim data-noescape class="php">
-      /**
-       * @return array
-       */
-      public function kataZeroB(): array
-      {
-          $out = [];
-          for ($i = 0; $i <= 10; $i += 2) {
-              array_push($out, $i);
-          }
-          return $out;
-      }
+                          /**
+                           * @return array
+                           */
+                          public function kataZeroB(): array
+                          {
+                              $out = [];
+                              for ($i = 0; $i <= 10; $i += 2) {
+                                  array_push($out, $i);
+                              }
+                              return $out;
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroBJSImperativo"
@@ -493,14 +493,14 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione imperativa in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      export const ZeroB = () => {
-          let out = [];
-          for(let i=2; i < 10; i+=2){
-              out.push(i);
-          }
+                          export const ZeroB = () => {
+                              let out = [];
+                              for(let i=2; i < 10; i+=2){
+                                  out.push(i);
+                              }
 
-          return out;
-      };
+                              return out;
+                          };
                         </code></pre>
                     </section>
                     <section id="ZeroBJavaFunzionale"
@@ -510,12 +510,12 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in Java</h3>
                         <pre><code data-trim data-noescape class="java">
-    public List<Integer> kataZeroB() {
+                          public List<Integer> kataZeroB() {
                             return Stream.iterate(2, i -> i + 2 )
-                            .limit(50l)
-                            .filter(i -> i <= 10)
-                            .collect(Collectors.toList());
-                            }
+                                .limit(50l)
+                                .filter(i -> i <= 10)
+                                .collect(Collectors.toList());
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroBPHPFunzionale"
@@ -525,13 +525,13 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in PHP</h3>
                         <pre><code data-trim data-noescape class="php">
-      /**
-       * @return array
-       */
-      public function kataZeroB(): array
-      {
-          return range(0, 10, 2);
-      }
+                          /**
+                           * @return array
+                           */
+                          public function kataZeroB(): array
+                          {
+                              return range(0, 10, 2);
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroBJSFunzionale"
@@ -542,9 +542,9 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione funzionale in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      export const ZeroB = () => {
-          return _.range(2, 10, 2);
-      };
+                          export const ZeroB = () => {
+                              return _.range(2, 10, 2);
+                          };
                         </code></pre>
                     </section>
                     <section id="ZeroC">
@@ -558,13 +558,13 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code class="java" data-trim data-noescape>
-  public List<Integer> kataZeroC(){
+                          public List<Integer> kataZeroC(){
                             List<Integer> lista = new ArrayList<>();
                             for(Integer i=0; i<=100; i+=7){
-                            lista.add(i);
+                              lista.add(i);
                             }
                             return lista;
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroCPHPImperativo"
@@ -574,17 +574,17 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in PHP</h3>
                         <pre><code data-trim data-noescape class="php">
-      /**
-       * @return array
-       */
-      public function kataZeroC(): array
-      {
-          $out = [];
-          for ($i = 7; $i <= 100; $i += 7) {
-              array_push($out, $i);
-          }
-          return $out;
-      }
+                          /**
+                           * @return array
+                           */
+                          public function kataZeroC(): array
+                          {
+                              $out = [];
+                              for ($i = 7; $i <= 100; $i += 7) {
+                                  array_push($out, $i);
+                              }
+                              return $out;
+                          }
 
                         </code></pre>
                     </section>
@@ -596,14 +596,14 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione imperativa in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      export const ZeroC = () => {
-          let out = [];
-          for(let i=7; i <= 100; i+=7){
-              out.push(i);
-          }
+                          export const ZeroC = () => {
+                              let out = [];
+                              for(let i=7; i <= 100; i+=7){
+                                  out.push(i);
+                              }
 
-          return out;
-      }
+                              return out;
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroCJavaFunzionale"
@@ -613,12 +613,12 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in Java</h3>
                         <pre><code data-trim data-noescape class="java">
-    public List<Integer> kataZeroC() {
+                          public List<Integer> kataZeroC() {
                             return Stream.iterate(0, i -> i + 7 )
-                            .limit(50l)
-                            .filter(i -> i < 100)
-                            .collect(Collectors.toList());
-                            }
+                                .limit(50l)
+                                .filter(i -> i < 100)
+                                .collect(Collectors.toList());
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroCPHPFunzionale"
@@ -628,13 +628,13 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in PHP</h3>
                         <pre><code data-trim data-noescape class="php">
-      /**
-       * @return array
-       */
-      public function kataZeroC(): array
-      {
-          return range(7, 100, 7);
-      }
+                          /**
+                           * @return array
+                           */
+                          public function kataZeroC(): array
+                          {
+                              return range(7, 100, 7);
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroCJSFunzionale"
@@ -645,9 +645,9 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione funzionale in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      export const ZeroC = () => {
-          return _.range(7, 100, 7);
-      };
+                          export const ZeroC = () => {
+                              return _.range(7, 100, 7);
+                          };
                         </code></pre>
                     </section>
                     <section id="ZeroD">
@@ -661,16 +661,16 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code class="java" data-trim data-noescape>
-  public List<String> kataZeroD(){
+                          public List<String> kataZeroD(){
                             List<String> uomini = ELENCO_UOMINI;
                             List<String> filtrati = new ArrayList<>();
                             for(String uomo : uomini){
-                            if(uomo.startsWith("C")){
-                            filtrati.add(uomo);
-                            }
+                              if(uomo.startsWith("C")){
+                                filtrati.add(uomo);
+                              }
                             }
                             return filtrati;
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroDPHPImperativo"
@@ -680,20 +680,20 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in PHP</h3>
                         <pre><code data-trim data-noescape class="php">
-      /**
-       * @param $names
-       * @return array
-       */
-      public function kataZeroD($names): array
-      {
-          $out = [];
-          foreach ($names as $name) {
-              if ("c" === strtolower($name[0])) {
-                  array_push($out, $name);
-              }
-          }
-          return $out;
-      }
+                          /**
+                           * @param $names
+                           * @return array
+                           */
+                          public function kataZeroD($names): array
+                          {
+                              $out = [];
+                              foreach ($names as $name) {
+                                  if ("c" === strtolower($name[0])) {
+                                      array_push($out, $name);
+                                  }
+                              }
+                              return $out;
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroDJSImperativo"
@@ -704,16 +704,16 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione imperativa in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      export const ZeroD = uomini => {
-          let out = [];
-          for(let i=0; i <= uomini.length; i++){
-              let s = uomini[i];
-              if( typeof s === 'string' && s.startsWith("C")){
-                  out.push(s);
-              }
+                          export const ZeroD = uomini => {
+                              let out = [];
+                              for(let i=0; i <= uomini.length; i++){
+                                  let s = uomini[i];
+                                  if( typeof s === 'string' && s.startsWith("C")){
+                                      out.push(s);
+                                  }
 
-          return out;
-      };
+                              return out;
+                          };
                         </code></pre>
                     </section>
                     <section id="ZeroDJavaFunzionale"
@@ -723,11 +723,11 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in Java</h3>
                         <pre><code data-trim data-noescape class="java">
-    public List<String> kataZeroD() {
+                          public List<String> kataZeroD() {
                             return ELENCO_UOMINI.stream()
-                            .filter(s -> s.startsWith("C"))
-                            .collect(Collectors.toList());
-                            }
+                                .filter(s -> s.startsWith("C"))
+                                .collect(Collectors.toList());
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroDPHPFunzionale"
@@ -737,16 +737,16 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in PHP</h3>
                         <pre><code data-trim data-noescape class="php">
-      /**
-       * @param array $menNames
-       * @return array
-       */
-      public function kataZeroD(array $menNames): array
-      {
-          return array_values(array_filter($menNames, function ($item) {
-              return strtolower($item[0]) === 'c';
-          }));
-      }
+                          /**
+                           * @param array $menNames
+                           * @return array
+                           */
+                          public function kataZeroD(array $menNames): array
+                          {
+                              return array_values(array_filter($menNames, function ($item) {
+                                  return strtolower($item[0]) === 'c';
+                              }));
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroDJSFunzionale"
@@ -757,9 +757,9 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione funzionale in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      export const ZeroD = uomini => {
-          return _.filter(uomini, (s) => s.startsWith("C"));
-      };
+                          export const ZeroD = uomini => {
+                              return _.filter(uomini, (s) => s.startsWith("C"));
+                          };
                         </code></pre>
                     </section>
                     <section id="ZeroE">
@@ -984,11 +984,11 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code class="java" data-trim data-noescape>
-  public List<String> kataZeroG(){
+                          public List<String> kataZeroG(){
                             List<String> uomini = new ArrayList<>(ELENCO_UOMINI);
                             Collections.sort(uomini);
                             return uomini;
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroGPHPImperativo"
@@ -1030,11 +1030,11 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in Java</h3>
                         <pre><code data-trim data-noescape class="java">
-    public List<String> kataZeroG() {
+                          public List<String> kataZeroG() {
                             return ELENCO_UOMINI.stream()
-                            .sorted()
-                            .collect(Collectors.toList());
-                            }
+                              .sorted()
+                              .collect(Collectors.toList());
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroGPHPFunzionale"
@@ -1080,17 +1080,17 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code class="java" data-trim data-noescape>
-  public int kataZeroH(){
-    List<Integer> divisori = new ArrayList<>();
+                          public int kataZeroH(){
+                            List<Integer> divisori = new ArrayList<>();
                             for(int i=2; i<=100; i++){
-                            if(i % 41 == 0){
-                            divisori.add(41);
-                            }
+                              if(i % 41 == 0){
+                                divisori.add(41);
+                              }
                             }
                             return divisori.get(
-                            (new Random()).nextInt(divisori.size())
+                              (new Random()).nextInt(divisori.size())
                             );
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroHPHPImperativo"
@@ -1190,14 +1190,14 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code class="java" data-trim data-noescape>
-  public String kataZeroI(){
-    List<String> uomini = ELENCO_UOMINI;
+                          public String kataZeroI(){
+                            List<String> uomini = ELENCO_UOMINI;
                             StringJoiner joiner = new StringJoiner(", ");
                             for(String uomo : uomini){
-                            joiner.add(uomo);
+                              joiner.add(uomo);
                             }
                             return joiner.toString();
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroIPHPImperativo"
@@ -1292,11 +1292,11 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code class="java" data-trim data-noescape>
-  public Set<String> kataZeroJ(){
+                          public Set<String> kataZeroJ(){
                             List<String> uomini = ELENCO_UOMINI;
                             Set<String> insiemeUomini = new HashSet(uomini);
                             return insiemeUomini;
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroJPHPImperativo"
@@ -1334,10 +1334,10 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in Java</h3>
                         <pre><code data-trim data-noescape class="java">
-    public Set<String> kataZeroJ() {
+                          public Set<String> kataZeroJ() {
                             return ELENCO_UOMINI.stream()
                             .collect(Collectors.toSet());
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroJPHPFunzionale"
@@ -1381,22 +1381,22 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code data-trim data-noescape class="java" style="height: 150%">
-  public Map&lt;Integer,List&lt;String>> kataZeroK(){
-    List<String> donne = ELENCO_DONNE;
+                          public Map&lt;Integer,List&lt;String>> kataZeroK(){
+                            List<String> donne = ELENCO_DONNE;
                             Map&lt;Integer,List&lt;String>> map = new HashMap<>();
                             for(String donna : donne){
-                            int lunghezza = donna.length();
-                            if(map.containsKey(lunghezza)){
-                            List<String> list = map.get(lunghezza);
-                            list.add(donna);
-                            }else{
-                            List<String> list = new ArrayList<>();
-                            list.add(donna);
-                            map.put(lunghezza, list);
-                            }
+                              int lunghezza = donna.length();
+                              if(map.containsKey(lunghezza)){
+                                List<String> list = map.get(lunghezza);
+                                list.add(donna);
+                              }else{
+                                List<String> list = new ArrayList<>();
+                                list.add(donna);
+                                map.put(lunghezza, list);
+                              }
                             }
                             return map;
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroKPHPImperativo"
@@ -1506,14 +1506,14 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code class="java" data-trim data-noescape>
-  public List<Integer> kataZeroL(){
+                          public List<Integer> kataZeroL(){
                             List<String> donne = ELENCO_DONNE;
                             List<Integer> list = new ArrayList<>();
                             for(String donna : donne){
-                            list.add( donna.length() );
+                              list.add( donna.length() );
                             }
                             return list;
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroLPHPImperativo"
@@ -1545,13 +1545,13 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione imperativa in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      export const ZeroL = donne => {
-          let out = [];
-          for(let i=0; i<donne.length; i++){
-                                       out.push(donne[i].length);
-                                       }
-                                       return out;
-                                       }
+                          export const ZeroL = donne => {
+                              let out = [];
+                              for(let i=0; i&lt;donne.length; i++){
+                                out.push(donne[i].length);
+                              }
+                              return out;
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroLJavaFunzionale"
@@ -1561,11 +1561,11 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in Java</h3>
                         <pre><code data-trim data-noescape class="java">
-    public List<Integer> kataZeroL() {
+                          public List&lt;Integer> kataZeroL() {
                             return ELENCO_DONNE.stream()
                             .map(s -> s.length())
                             .collect(Collectors.toList());
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroLPHPFunzionale"
@@ -1611,15 +1611,15 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione imperativa in Java</h3>
                         <pre><code class="java" data-trim data-noescape>
-  public List<String> kataZeroM(){
-                            List<String> donne = ELENCO_DONNE;
-                            List<String> list = new ArrayList<>();
+                          public List&lt;String&gt; kataZeroM(){
+                            List&lt;String&gt; donne = ELENCO_DONNE;
+                            List&lt;String&gt; list = new ArrayList&lt;&gt;();
                             for(String donna : donne){
-                            String iniziale = donna.substring(0,1);
-                            list.add(iniziale);
+                              String iniziale = donna.substring(0,1);
+                              list.add(iniziale);
                             }
                             return list;
-                            }
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroMPHPImperativo"
@@ -1651,13 +1651,13 @@
                              data-background-position="0px 0px">
                         <h3>Soluzione imperativa in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      export const ZeroM = donne => {
-          let out = [];
-          for(let i=0; i<donne.length; i++){
-                                       out.push(donne[i][0]);
-                                       }
-                                       return out;
-                                       }
+                          export const ZeroM = donne => {
+                              let out = [];
+                              for(let i=0; i &lt; donne.length; i++){
+                                out.push(donne[i][0]);
+                              }
+                              return out;
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroMJavaFunzionale"
@@ -1667,11 +1667,11 @@
                              data-background-position="10px 10px">
                         <h3>Soluzione funzionale in Java</h3>
                         <pre><code data-trim data-noescape class="java">
-    public List<String> kataZeroM() {
+                          public List&lt;String&gt; kataZeroM() {
                             return ELENCO_DONNE.stream()
-                            .map(s -> s.substring(0,1))
-                            .collect(Collectors.toList());
-                            }
+                                .map(s -> s.substring(0,1))
+                                .collect(Collectors.toList());
+                          }
                         </code></pre>
                     </section>
                     <section id="ZeroMPHPFunzionale"
