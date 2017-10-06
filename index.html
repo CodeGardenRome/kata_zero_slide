@@ -36,22 +36,22 @@
                     <section>
                         <h2>Alan Turing</h2>
                         <image src="asset/doctorstrange_png_1003x0_crop_q85.png" style="width:30%;height:30%" />
-                        <p>Che non ha bisogno di presentazioni!</p>
                     </section>
                     <section>
                         <h2>Alan Turing</h2>
                         <image src="asset/alan_turing.jpg" style="width:30%;height:30%" />
-                        <p>Costruisce la macchina Bomb per decifrare Enigma ed è considerato il padre dell'informatica e dell'intelligenza artificiale</p>
+                        <aside class="notes">
+                            <p>Costruisce la macchina Bomb per decifrare Enigma ed è considerato il padre dell'informatica e dell'intelligenza artificiale</p>
+	                      </aside>
                     </section>
                     <section>
                         <h2>Alonzo Church</h2>
                         <image src="asset/church_alonzo.jpg" style="width:30%;height:30%" />
-                        <p>Come Turing, matematico e inventore il calcolo lambda</p>
-                    </section>
-                    <section>
-                        <h2>Alonzo Church</h2>
-                        <p>Oltre a dare il nome alla nostra community il calcolo lambda è il fondamento del paradigma di programmazione funzionale</p>
-                        <p>Si potrebbe anzi dire che il "paradigma" è l'applicazione in informatica del calcolo lambda</p>
+                        <aside class="notes">
+                            <p>Come Turing, matematico e inventore il calcolo lambda</p>
+                            <p>Oltre a dare il nome alla nostra community il calcolo lambda è il fondamento del paradigma di programmazione funzionale</p>
+                            <p>Si potrebbe anzi dire che il "paradigma" è l'applicazione in informatica del calcolo lambda</p>
+                        </aside>
                     </section>
                     <section>
                         <h2>La Tesi di Church-Turing</h2>
@@ -62,22 +62,21 @@
                     <section>
                         <h2>John Von Neumann</h2>
                         <image src="asset/von_neumann.gif" style="width:25%;height:25%" />
-                        <p>Il suo modello architetturale fu la prima applicazione completa del modello turing e sopravvive ancora oggi nei nostri computer...</p>
+                        <aside class="notes">
+                            <p>Il suo modello architetturale fu la prima applicazione completa del modello turing e sopravvive ancora oggi nei nostri computer...</p>
+                        </aside>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h2>La Confluence</h2>
-                        <p>Nel 2004 viene raggiunto il limite di scaling delle CPU</p>
-                        <p>Finisce ufficialmente l'era del single core</p>
-                    </section>
-                    <section>
-                        <h2>La Confluence</h2>
                         <image src="asset/CPU-Scaling.jpg" style="width:50%;height:50%"/>
-                    </section>
-                    <section>
-                        <h2>La Confluence</h2>
-                        <p>Dal 2014 il nostro mondo si ricorda del paradigma funzionale...</p>
+                        <aside class="notes">
+                            <p>Nel 2004 viene raggiunto il limite di scaling delle CPU</p>
+                            <p>Finisce ufficialmente l'era del single core</p>
+                            <p>E quindi dal 2014 circa il mondo si ricorda del paradigma funzionale</p>
+                            <p>Il perché è una risposta complessa che verrà data lungo questo percorso dei lambda-garden</p>
+                        </aside>
                     </section>
                     <section>
                         <h2>Ma chi sviluppa veramente col funzionale?</h2>
@@ -193,14 +192,16 @@
                     </section>
                     <section>
                         <p>Tanto per citarne alcuni:</p>
-                        <p>Haskell, Scala, Clojure, Elixir, Elm, Rust, Swift, Kotlin, F#, ecc...</p>
+                        <p>Haskell, Scala, Clojure, Elixir, Elm, Rust, Swift, Kotlin, ecc...</p>
                     </section>
                     <section>
                         <p><strong>Microsoft</strong></p>
                         <p><strong>Apple</strong></p>
                         <p><strong>Google</strong></p>
                         <p><strong>Facebook</strong></p>
-                        <p>Hanno investito nella creazione di un linguaggio di programmazione funzionale</p>
+                        <aside class="notes">
+                            <p>Hanno investito nella creazione di un linguaggio di programmazione funzionale</p>
+                        </aside>
                     </section>
 			              <section>
                         <h2>Trend</h2>
@@ -246,32 +247,38 @@
                 <section>
                     <section>
                         <h2>Hands On!</h2>
+                        <image src="asset/hands_on.jpg" style="width:60%;height:60%" />
                         <p>...e famolo un po' de funzionale no?</p>
                     </section>
                     <section>
                         <h2>First Class Citizen</h2>
                         <p>Ovvero funzioni come dato</p>
+                        <aside class="notes">
+                            <p>ossia le funzioni possono essere iniettate come argomenti e ritornate da metodi</p>
+                        </aside>
                     </section>
                     <section>
                         <h3>Ok... Ma a che serve?</h3>
                         <p>Composition over inheritance</p>
                         <p>Dependecy Injection</p>
-                    </section>
-                    <section>
-                        <h3>...quindi?</h3>
-                        <p>Molti pattern della gang of four possono essere sintatizzati con First Class Citizen</p>
-                        <p>Lo strategy, il command, l'observer, ecc...</p>
+                        <p>Design Pattern ?!</p>
+                        <aside class="notes">
+                            <p>Molti pattern della gang of four possono essere sintatizzati con First Class Citizen</p>
+                            <p>Lo strategy, il command, l'observer, ecc...</p>
+	                      </aside>
                     </section>
                     <section>
                         <p>In <em>gergo</em> funzionale si parla di</p>
                         <h2>Function Composition</h2>
-                        <p>quando si creano funzionalità complesse componenedo funzioni semplici dal comportamento prevedibile</p>
-                        <p>Se tutto questo vi suona come un principio OOP avete iniziato a comprendere meglio la tesi Church-Turing :)</p>
+                        <aside class="notes">
+                            <p>quando si creano funzionalità complesse componenedo funzioni semplici dal comportamento prevedibile</p>
+                            <p>Se tutto questo vi suona come un principio OOP avete iniziato a comprendere meglio la tesi Church-Turing :)</p>
+	                      </aside>
                     </section>
                     <section>
                         <p>Un piccolo esempio</p>
                         <pre><code data-trim data-noescape class="php">
-array_values(array_filter($menNames, function ($item) {
+array_values(array_filter($items, function ($item) {
             return ...
         }));
                         </code></pre>
@@ -283,6 +290,10 @@ array_values(array_filter($menNames, function ($item) {
                     <section>
                         <p>Alan Key</p>
                         <image src="asset/alan_key.jpg" style="width:75%;height:75%"/>
+                        <aside class="notes">
+                            <p>Alan Key è il padre di smalltalk e ha detto questa frase nel 1993</p>
+                            <p>Questa foto tra l'altro viene dal sito di ImmutableJs</p>
+                        </aside>
                     </section>
                     <section>
                         <p>Martin Fowler</p>
@@ -316,10 +327,59 @@ public final class Planet {
                         <h2>Side-effects e side-causes</h2>
                         <p>In una funzione:</p>
                         <ul>
-                            <li><p>si intende come side effect un output <em>non esplicito</em></p></li>
-                            <li><p>si intende coem side cause un input <em>non esplicito</em></p></li>
-                            <li><p>generalmente il termine <em>side effects</em> è utilizzato sia sia per input e output <em>celati</em></p></li>
+                            <li><p>si intende come <em>side effect</em> un output <strong>non esplicito</strong></p></li>
+                            <li><p>si intende come <em>side cause</em> un input <strong>non esplicito</strong></p></li>
+                            <li><p>generalmente il termine side effects è utilizzato sia sia per input e output <em>celati</em></p></li>
                         </ul>
+                    </section>
+                    <section>
+                        <p>Nel paradigma funzionale:</p>
+                        <h3>Gli input di una funzione devono essere argomenti</h3>
+                        <h3>L'output deve essere ritornato dalla funzione</h3>
+                    </section>
+                    <section>
+                        <p>Un esempio con side effects</p>
+                        <pre><code data-trim data-neoscape class="java">
+public class SideEffectsSum {
+    int addendoA, addendoB, somma;
+
+    public void somma(){
+        somma = addendoA + addendoB;
+    }
+    public void setAddendoA(int addendoA) {
+        this.addendoA = addendoA;
+    }
+    public void setAddendoB(int addendoB) {
+        this.addendoB = addendoB;
+    }
+    public int getSomma() { return somma; }
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <p>Inconsistenza</p>
+                        <pre><code data-trim data-neoscape class="java">
+SideEffectsSum sum = new SideEffectsSum();
+sum.setAddendoA(2);
+sum.setAddendoB(2);
+sum.somma();
+...
+sum.setAddendoA(3);
+sum.somma();
+...
+
+sum.getSomma(); // 5
+                        </code></pre>
+                    </section>
+                    <section>
+                        <p>Un esempio senza...</p>
+                        <pre><code data-trim data-neoscape class="java">
+public class PureSum {
+    int somma(int addendoA, int addendoB){
+        return addendoA + addendoB;
+    }
+}
+                        </code></pre>
                     </section>
 			              <section>
                         <h2>Purity</h2>
@@ -328,6 +388,12 @@ public final class Planet {
                             <li><p>quando restituisce sempre lo stesso valore dagli stessi argomenti in input</p></li>
                             <li><p>ossia quando è priva di side effects</p></li>
                         </ul>
+                    </section>
+                    <section>
+                        <h2>Pure functions</h2>
+                        <p>Leggibilità</p>
+                        <p>Autodocumentali</p>
+                        <p>Single Responsibility Principle</p>
                     </section>
                 </section>
                 <section>
@@ -344,10 +410,13 @@ public final class Planet {
                         </ul>
                     </section>
 			              <section>
-                        <p>High Order Function base</p>
-                        <p>Le high order function sono funzioni che accettano almeno due parametri: una funzione anonima (lambda) e una lista di elementi</p>
-                        <p>La lambda sarà applicata a ogni elemento della lista</p>
-                        <p>La natura della high order function è determinata da come *decora* la lambda in input</p>
+                        <h2>High Order Function</h2>
+                        <aside class="notes">
+		                        <p>Le high order function sono funzioni che accettano almeno due parametri: una funzione anonima (lambda) e una lista di elementi</p>
+                            <p>Ogni elemento della lista viene passato in argomento alla lambda</p>
+                            <p>La lambda controlla la trasformazione degli elementi in ingresso</p>
+                            <p>Ogni HOF applica una trasfromazione differente</p>
+	                      </aside>
                     </section>
                     <section>
                         <h2>Map</h2>
@@ -1761,6 +1830,9 @@ public final class Planet {
       };
                         </code></pre>
                     </section>
+                </section>
+                <section>
+                    <h1>Grazie :)</h1>
                 </section>
             </div>
         </div>
