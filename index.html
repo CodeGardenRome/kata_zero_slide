@@ -1,402 +1,369 @@
 <!doctype html>
 <html>
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Workshop 1</title>
+        <title>Lambda-Garden 1</title>
 
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css">
 
-  <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-  <!-- Printing and PDF exports -->
-  <script>
-  var link = document.createElement( 'link' );
-  link.rel = 'stylesheet';
-  link.type = 'text/css';
-  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-  document.getElementsByTagName( 'head' )[0].appendChild( link );
-  </script>
-  </head>
-  <body>
-  <div class="reveal">
-  <div class="slides">
-    <section>
-              <p>Lambda Garden</p>
-              <h1>Workshop 1</h1>
-          </section>
-    <section>
-            <section>
-                <p>Un po' di storia...</p>
-                <h2>Un mago, un matematico e un fisico entrano in un bar...</h2>
-            </section>
-            <section>
-                <h2>Alan Turing</h2>
-                <image src="asset/doctorstrange_png_1003x0_crop_q85.png" style="width:30%;height:30%" />
-                <p>Che non ha bisogno di presentazioni!</p>
-            </section>
-            <section>
-                <h2>Alan Turing</h2>
-                <image src="asset/alan_turing.jpg" style="width:30%;height:30%" />
-                <p>Costruisce la macchina Bomb per decifrare Enigma ed è considerato il padre dell'informatica e dell'intelligenza artificiale</p>
-            </section>
-            <section>
-                <h2>Alonzo Church</h2>
-                <image src="asset/church_alonzo.jpg" style="width:30%;height:30%" />
-                <p>Come Turing, matematico e inventore il calcolo lambda</p>
-            </section>
-            <section>
-                <h2>Alonzo Church</h2>
-                <p>Oltre a dare il nome alla nostra community il calcolo lambda è il fondamento del paradigma di programmazione funzionale</p>
-                <p>Si potrebbe anzi dire che il "paradigma" è l'applicazione in informatica del calcolo lambda</p>
-            </section>
-            <section>
-                <h2>La Tesi di Church-Turing</h2>
-                <image src="asset/church_alonzo.jpg" style="width:41%;height:41%" />
-                <image src="asset/alan_turing.jpg" style="width:30%;height:30%" />
-                <p><em>Every effectively calculable function is a computable function</em></p>
-            </section>
-            <section>
-                <h2>John Von Neumann</h2>
-                <image src="asset/von_neumann.gif" style="width:25%;height:25%" />
-                <p>Il suo modello architetturale fu la prima applicazione completa del modello turing e sopravvive ancora oggi nei nostri computer...</p>
-            </section>
-        </section>
-  <section>
-            <section>
-                <h2>La Confluence</h2>
-                <p>Nel 2004 viene raggiunto il limite di scaling delle CPU</p>
-                <p>Finisce ufficialmente l'era del single core</p>
-            </section>
-            <section>
-                <h2>La Confluence</h2>
-                <image src="asset/CPU-Scaling.jpg" style="width:50%;height:50%"/>
-            </section>
-            <section>
-                <h2>La Confluence</h2>
-                <p>Dal 2014 il nostro mondo si ricorda del paradigma funzionale...</p>
-            </section>
-            <section>
-                <h2>Ma chi programma veramente in funzionale?</h2>
-            </section>
-<<<<<<< HEAD
-            <section id="aziende1" data-background="#ffffff">
-    <image src="asset/companies/credit-suisse.png" style="width:20%;height:20%" /><br/>
-    <image src="asset/companies/citi2.png" style="width:7%;height:7%" />
-  <image src="asset/companies/pivotal.png" style="width:10%;height:10%" />
-  <image src="asset/companies/bank-of-america.png" style="width:30%;height:30%"/>
-  <image src="asset/companies/barclays.png" style="width:20%;height:20%" /><br/>
-  <image src="asset/companies/deutsche-bank.gif" style="width:6%;height:6%" />
-  <image src="asset/companies/nyt.png" style="width:35%;height:35%" />
-  <image src="asset/companies/qualcomm.png" style="width:25%;height:25%" />
-  <image src="asset/companies/verizon.png" style="width:25%;height:25%" />
-  <image src="asset/companies/sap.png" style="width:11%;height:11%" />
-  <image src="asset/companies/morgan-stanley.png" style="width:20%;height:20%" />
-  <image src="asset/companies/ing.png" style="width:20%;height:20%" />
-  <image src="asset/companies/unicredit.png" style="width:30%;height:30%" />
-  <image src="asset/companies/merril-lynch.jpg" style="width:35%;height:35%"/>
-            </section>
-            <section id="aziende2" data-background="#ffffff">
-  <image src="asset/companies/starbucks.png" style="width:10%;height:10%" />
-  <image src="asset/companies/hp.png" style="width:10%;height:10%" />
-  <image src="asset/companies/ericsson.png" style="width:11%;height:11%" />
-  <image src="asset/companies/ea.png" style="width:20%;height:20%" />
-  <image src="asset/companies/linkedin.png" style="width:24%;height:24%" />
-  <image src="asset/companies/heroku.png" style="width:20%;height:20%" />
-  <image src="asset/companies/red-hat.png" style="width:27%;height:27%" />
-  <image src="asset/companies/groupon.png" style="width:20%;height:20%" />
-  <image src="asset/companies/zalando.png" style="width:30%;height:30%" />
-  <image src="asset/companies/weightwatchers.png" style="width:30%;height:30%" />
-  <image src="asset/companies/accenture.png" style="width:20%;height:20%" />
-  <image src="asset/companies/zendesk.png" style="width:20%;height:20%" />
-  <image src="asset/companies/panasonic.png" style="width:15%;height:15%" />
-  <image src="asset/companies/nvidia.png" style="width:20%;height:20%;background-color:black;" />
-  <image src="asset/companies/walmart.png" style="width:20%;height:20%" />
-  <image src="asset/companies/salesforce.png" style="width:7%;height:7%" />
-  </section>
-            <section id="aziende3" data-background="#ffffff">
-  <image src="asset/companies/apple.png" style="width:10%;height:10%" />
-  <image src="asset/companies/huawei.png" style="width:10%;height:10%" />
-  <image src="asset/companies/intel.png" style="width:15%;height:15%" />
-  <image src="asset/companies/facebook.png" style="width:20%;height:20%" />
-  <image src="asset/companies/amazon.png" style="width:20%;height:20%" />
-  <image src="asset/companies/groupon.png" style="width:20%;height:20%" />
-  <image src="asset/companies/google.png" style="width:20%;height:20%" />
-  <image src="asset/companies/microsoft.png" style="width:30%;height:30%" />
-  <image src="asset/companies/netflix.png" style="width:20%;height:20%" />
-  <image src="asset/companies/ebay.png" style="width:20%;height:20%" />
-  <image src="asset/companies/oracle-logo.png" style="width:20%;height:20%" />
-  <image src="asset/companies/ibm.png" style="width:20%;height:20%" />
-  <image src="asset/companies/spotify.png" style="width:30%;height:30%" />
-  <image src="asset/companies/atlassian.png" style="width:40%;height:40%" />
-  <image src="asset/companies/atet.png" style="width:20%;height:20%" />
-  <image src="asset/companies/paypal.png" style="width:20%;height:20%" />
-  </section>
-        </section>
-  <section>
-            <section><h2>E il funzionale nel mio linguaggio? </h2></section>
-=======
-            <section>
-                Citigroup "Pivotal Labs" ThoughtWorks "Bank of America Merril" Lynch Barclays Credit Suisse, "Deutsche Bank" "The New York Times" Qualcomm Verizon SAP "Morgan Stanley" ING Unicredit
-            </section>
-            <section>LinkedIn Heroku "Red Hat" Groupon Zalando Starbucks Weightwatchers Accenture Wikidocs Zendesk "Hawlett Packard" Panasonic NVIDIA "Electronic Arts" "Ericsson AB" Walmart Salesforce</section>
-            <section>Facebook Amazon Google Twitter Apple Microsoft Netflix eBay Paypal Oracle IBM Spotify Atlassian Huawei AT&T Intel </section>
-        </section>
-				<section>
-            <section><h2>Il paradigma funzionale a casa mia...</h2></section>
->>>>>>> piccole correzioni, sezione hands on parziale
-            <section
-                data-background-color="#f4dc38"
-                data-background-image="asset/logo_js.png"
-                data-background-size="200px"
-                data-background-position="0px 0px">
-                <h2>Redux</h2>
-                <h2>Immutable Js</h2>
-            </section>
-            <section
-                data-background-color="#777cb1"
-                data-background-image="asset/logo_php.png"
-                data-background-size="200px"
-                data-background-position="10px 10px"
-            >
-                <h2>Functional-php</h2>
-                <h2>Immutable.php</h2>
-                <h2>Laravel Collection</h2>
-                <h2>RFC https://wiki.php.net/rfc/immutability</h2>
-            </section>
-            <section
-<<<<<<< HEAD
-                data-background-color="#64b5cb"
-            >
-                <h2>Elm</h2>
-            </section>
-            <section
-                data-background-color="saddlebrown"
-=======
-                data-background-color="#f46720"
->>>>>>> completo o quasi fino alla sezione hands on
-                data-background-image="asset/logo_java.png"
-                data-background-size="200px"
-                data-background-position="10px 10px"
-            >
-                <h2>Vavr</h2>
-                <h2>Spring WebFlux</h2>
-            </section>
-            <section
-                data-background-color="#1a9cc4"
-                data-background-image="asset/logo_docker.png"
-                data-background-size="200px"
-                data-background-position="10px 10px"
-            >
-                <h2>Immutable Infrastructure</h2>
-                <h2>Serveless architecture</h2>
-                <p>(es: AWS Lambda)</p>
-            </section>
-            <section
-                data-background-image="asset/logo_mobile.png"
-                data-background-size="200px"
-                data-background-position="10px 10px"
-            >
-                <h2>Da Java e Objective-C...</h2>
-                <h2>...a Kotlin e Swift</h2>
-                <p>Dal massimo dell'OOP a due linguaggi di ispirazione funzionali</p>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>E poi ci sono i linguaggi funzionali</h2>
-                <p>...e multi paradigma</p>
-            </section>
-            <section>
-                <p>Tanto per citarne alcuni:</p>
-                <p>Haskell, Scala, Clojure/Clojurescript, Elixir, Elm, Rust, Swift, Kotlin, F#, ecc...</p>
-            </section>
-<<<<<<< HEAD
-      <section>
-                Trend dei linguaggi funzionali?
-=======
-				    <section>
-<<<<<<< HEAD
-                <h2>Trend dei linguaggi funzionali</h2>
->>>>>>> completo o quasi fino alla sezione hands on
-=======
-                <h2>Trend</h2>
->>>>>>> piccole correzioni, sezione hands on parziale
-            </section>
-            <section>
-                <h3>Effort richeisto</h3>
-                <p>fonte: stack overflow</p>
-            </section>
-            <section>
-                <h3>Salario/Esperienza</h3>
-                <image src="asset/grafici/salario_esperienza_by_language.png" style="width:70%;height:70%" />
-                <p>fonte: stack overflow</p>
-            </section>
-            <section>
-                <h3>Gratificazione</h3>
-                <image src="asset/grafici/gratification_by_language.png" style="width:70%;height:70%" />
-            </section>
-        </section>
-        <section>
-            <section>
-                <p>Lambda-Roma</p>
-                <h2>Programma di community</h2>
-            </section>
-            <section>
-                <p>Programma della community</p>
-                <h2>Lambda-Garden</h2>
-                <p>Workshop alla scoperta del paradigma funzionale</p>
-                <p>Tutti gli esercizi sono tenuti in Java, PHP, Javascript</p>
-            </section>
-            <section>
-                <p>Programma della community</p>
-                <h2>Lambda-Talks</h2>
-                <p>Talk e approfondimenti sui linguaggi Funzionali</p>
-                <p>Scala, Clojure, Haskell, etc...</p>
-            </section>
-            <section>
-                <p>Programma della community</p>
-                <h2>Lambda-Incidents</h2>
-                <p>Meeting con altre community</p>
-                <p>Talk sul devop ispirato ai concetti funzionali</p>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>Hands On!</h2>
-                <p>...e famolo un po' de funzionale no?</p>
-            </section>
-<<<<<<< HEAD
-            <section>First Class Citizen</section>
-      <section>Immutability</section>
-      <section>Side-effects (e side-causes)</section>
-      <section>Purezza</section>
-        </section>
-        <section>
-      <section>Toolbox!</section>
-      <section>Concetti</section>
-      <section>High Order Function principali</section>
-=======
-            <section>
-                <h2>First Class Citizen</h2>
-                <p>Ovvero funzioni come dato</p>
-            </section>
-            <section>
-                <h3>Ok... Ma a che serve?</h3>
-                <p>Favor composition over inheritance</p>
-                <p>Dependecy Injection</p>
-            </section>
-            <section>
-                <h3>Ok... Ma a che serve?</h3>
-                <p>Molti pattern della gang of four possono essere sintatizzati con First Class Citizen</p>
-                <p>Lo strategy, il command, l'observer, ecc...</p>
-            </section>
-            <section>
-                <p>In <em>gergo</em> funzionale tutto questo fa parte della</p>
-                <h2>Function Composition</h2>
-                <p>Ovvero la possibilità di comporre funzionalità complesse componenedole da oggetti semplici dal comportamento prevedibile</p>
-                <p>Se tutto questo vi suona come un principio OOP avete iniziato a comprendere meglio la tesi Church-Turing :)</p>
-            </section>
-            <section>
-                esempi
-            </section>
-				    <section>
-                <h2>Immutability</h2>
-                <p>Un oggetto immutabile è un oggetto il cui stato non può essere cambiato dopo la sua creazione</p>
-            </section>
-				    <section>
-                <h2>Side-effects e side-causes</h2>
-                <p>In una funzione:</p>
-                <ul>
-                    <li><p>si intende come side effect un output <em>non esplicito</em></p></li>
-                    <li><p>si intende coem side cause un input <em>non esplicito</em></p></li>
-                    <li><p>generalmente il termine <em>side effects</em> è utilizzato sia sia per input e output <em>celati</em></p></li>
-                </ul>
-            </section>
-				    <section>
-                <h2>Purity</h2>
-                <p>Una funzione si dice pura:</p>
-                <ul>
-                    <li><p>quando restituisce sempre lo stesso valore dagli stessi argomenti in input</p></li>
-                    <li><p>ossia quando è priva di side effects</p></li>
-                </ul>
-            </section>
-        </section>
-        <section>
-				    <section>
-                <h2>Toolbox!</h2>
-            </section>
-				    <section>
-                <p>Concetti</p>
-                <ul>
-                    <li>First Class Citizen</li>
-                    <li>Immutability</li>
-                    <li>Side-effects</li>
-                    <li>Funzioni Pure</li>
-                </ul>
-            </section>
-				    <section>
-                <p>High Order Function base</p>
-                <p>Le high order function sono funzioni che accettano almeno due parametri: una funzione anonima (lambda) e una lista di elementi</p>
-                <p>La lambda sarà applicata a ogni elemento della lista</p>
-                <p>La natura della high order function è determinata da come *decora* la lambda in input</p>
-            </section>
-            <section>
-                <h2>Map</h2>
-                <p class="fragment fade-in">black box array in entrata, lambda, array in uscita, lambda nella box</p>
-            </section>
-            <section>
-                <h2>Filter</h2>
-                <p class="fragment fade-in">black box: array in entrata, lambda, array in uscita, bool nella box</p>
-            </section>
-            <section>
-                <h2>Reduce</h2>
-                <p class="fragment fade-in">black box: array in entrata, lambda, tipo carry, tipo in uscita, lambda nel box</p>
-            </section>
->>>>>>> completo o quasi fino alla sezione hands on
-        </section>
-        <section>
-      <section id="katas">
-  <h2>Katas</h2>
-  </section>
-  <section id="elencoUomini">
-  <h2>Elenco Uomini</h2>
-  "Tizio", "Caio", "Sempronio", "Mevio", "Filano" e "Calpurnio"
-  </section>
-  <section id="elencoDonne">
-  <h2>Elenco Donne</h2>
-  "Anna", "Carla", "Angela", "Chiara", "Emma", "Maria", "Sara"
-  </section>
-  <section id="ZeroA">
-  <h2>Zero A</h2>
-  Restituisci una lista contenente 1, 2, 3
-  </section>
-  <section id="ZeroAJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+        <!-- Printing and PDF exports -->
+        <script>
+         var link = document.createElement( 'link' );
+         link.rel = 'stylesheet';
+         link.type = 'text/css';
+         link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+         document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <p>Lambda Garden</p>
+                    <h1>Workshop 1</h1>
+                </section>
+                <section>
+                    <section>
+                        <p>Vi racconto un po' di storia...</p>
+                        <h2>Un mago, un matematico e un fisico entrano in un bar...</h2>
+                    </section>
+                    <section>
+                        <h2>Alan Turing</h2>
+                        <image src="asset/doctorstrange_png_1003x0_crop_q85.png" style="width:30%;height:30%" />
+                        <p>Che non ha bisogno di presentazioni!</p>
+                    </section>
+                    <section>
+                        <h2>Alan Turing</h2>
+                        <image src="asset/alan_turing.jpg" style="width:30%;height:30%" />
+                        <p>Costruisce la macchina Bomb per decifrare Enigma ed è considerato il padre dell'informatica e dell'intelligenza artificiale</p>
+                    </section>
+                    <section>
+                        <h2>Alonzo Church</h2>
+                        <image src="asset/church_alonzo.jpg" style="width:30%;height:30%" />
+                        <p>Come Turing, matematico e inventore il calcolo lambda</p>
+                    </section>
+                    <section>
+                        <h2>Alonzo Church</h2>
+                        <p>Oltre a dare il nome alla nostra community il calcolo lambda è il fondamento del paradigma di programmazione funzionale</p>
+                        <p>Si potrebbe anzi dire che il "paradigma" è l'applicazione in informatica del calcolo lambda</p>
+                    </section>
+                    <section>
+                        <h2>La Tesi di Church-Turing</h2>
+                        <image src="asset/church_alonzo.jpg" style="width:41%;height:41%" />
+                        <image src="asset/alan_turing.jpg" style="width:30%;height:30%" />
+                        <p><em>Every effectively calculable function is a computable function</em></p>
+                    </section>
+                    <section>
+                        <h2>John Von Neumann</h2>
+                        <image src="asset/von_neumann.gif" style="width:25%;height:25%" />
+                        <p>Il suo modello architetturale fu la prima applicazione completa del modello turing e sopravvive ancora oggi nei nostri computer...</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>La Confluence</h2>
+                        <p>Nel 2004 viene raggiunto il limite di scaling delle CPU</p>
+                        <p>Finisce ufficialmente l'era del single core</p>
+                    </section>
+                    <section>
+                        <h2>La Confluence</h2>
+                        <image src="asset/CPU-Scaling.jpg" style="width:50%;height:50%"/>
+                    </section>
+                    <section>
+                        <h2>La Confluence</h2>
+                        <p>Dal 2014 il nostro mondo si ricorda del paradigma funzionale...</p>
+                    </section>
+                    <section>
+                        <h2>Ma chi sviluppa veramente col funzionale?</h2>
+                    </section>
+                    <section id="aziende1" data-background="#ffffff">
+                        <image src="asset/companies/credit-suisse.png" style="width:20%;height:20%" /><br/>
+                        <image src="asset/companies/citi2.png" style="width:7%;height:7%" />
+                        <image src="asset/companies/pivotal.png" style="width:10%;height:10%" />
+                        <image src="asset/companies/bank-of-america.png" style="width:30%;height:30%"/>
+                        <image src="asset/companies/barclays.png" style="width:20%;height:20%" /><br/>
+                        <image src="asset/companies/deutsche-bank.gif" style="width:6%;height:6%" />
+                        <image src="asset/companies/nyt.png" style="width:35%;height:35%" />
+                        <image src="asset/companies/qualcomm.png" style="width:25%;height:25%" />
+                        <image src="asset/companies/verizon.png" style="width:25%;height:25%" />
+                        <image src="asset/companies/sap.png" style="width:11%;height:11%" />
+                        <image src="asset/companies/morgan-stanley.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/ing.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/unicredit.png" style="width:30%;height:30%" />
+                        <image src="asset/companies/merril-lynch.jpg" style="width:35%;height:35%"/>
+                    </section>
+                    <section id="aziende2" data-background="#ffffff">
+                        <image src="asset/companies/starbucks.png" style="width:10%;height:10%" />
+                        <image src="asset/companies/hp.png" style="width:10%;height:10%" />
+                        <image src="asset/companies/ericsson.png" style="width:11%;height:11%" />
+                        <image src="asset/companies/ea.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/linkedin.png" style="width:24%;height:24%" />
+                        <image src="asset/companies/heroku.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/red-hat.png" style="width:27%;height:27%" />
+                        <image src="asset/companies/groupon.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/zalando.png" style="width:30%;height:30%" />
+                        <image src="asset/companies/weightwatchers.png" style="width:30%;height:30%" />
+                        <image src="asset/companies/accenture.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/zendesk.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/panasonic.png" style="width:15%;height:15%" />
+                        <image src="asset/companies/nvidia.png" style="width:20%;height:20%;background-color:black;" />
+                        <image src="asset/companies/walmart.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/salesforce.png" style="width:7%;height:7%" />
+                    </section>
+                    <section id="aziende3" data-background="#ffffff">
+                        <image src="asset/companies/apple.png" style="width:10%;height:10%" />
+                        <image src="asset/companies/huawei.png" style="width:10%;height:10%" />
+                        <image src="asset/companies/intel.png" style="width:15%;height:15%" />
+                        <image src="asset/companies/facebook.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/amazon.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/paypal.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/twitter.jpg" style="width:20%;height:20%" />
+                        <image src="asset/companies/groupon.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/google.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/microsoft.png" style="width:30%;height:30%" />
+                        <image src="asset/companies/netflix.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/ebay.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/oracle-logo.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/ibm.png" style="width:20%;height:20%" />
+                        <image src="asset/companies/spotify.png" style="width:30%;height:30%" />
+                        <image src="asset/companies/atlassian.png" style="width:40%;height:40%" />
+                        <image src="asset/companies/atet.png" style="width:20%;height:20%" />
+                    </section>
+                </section>
+                <section>
+                    <section><h2>Il funzionale a casa nostra...</h2></section>
+                    <section
+                        data-background-color="#f4dc38"
+                        data-background-image="asset/logo_js.png"
+                        data-background-size="200px"
+                        data-background-position="0px 0px">
+                        <h2>Redux</h2>
+                        <h2>Immutablejs</h2>
+                    </section>
+                    <section
+                        data-background-color="#777cb1"
+                        data-background-image="asset/logo_php.png"
+                        data-background-size="200px"
+                        data-background-position="10px 10px"
+                    >
+                        <h2>Functional-php</h2>
+                        <h2>Immutable.php</h2>
+                        <h2>Laravel Collection</h2>
+                        <p>RFC https://wiki.php.net/rfc/immutability</p>
+                    </section>
+                    <section
+                        data-background-color="saddlebrown"
+                        data-background-image="asset/logo_java.png"
+                        data-background-size="200px"
+                        data-background-position="10px 10px"
+                    >
+                        <h2>Vavr</h2>
+                        <h2>Spring WebFlux</h2>
+                    </section>
+                    <section
+                        data-background-color="#1a9cc4"
+                        data-background-image="asset/logo_docker.png"
+                        data-background-size="200px"
+                        data-background-position="10px 10px"
+                    >
+                        <h2>Immutable Infrastructure</h2>
+                        <h2>Serveless architecture</h2>
+                        <p>(es: AWS Lambda)</p>
+                    </section>
+                    <section
+                        data-background-image="asset/logo_mobile.png"
+                        data-background-size="200px"
+                        data-background-position="10px 10px"
+                    >
+                        <h2>Da Java e Objective-C...</h2>
+                        <h2>...a Kotlin e Swift</h2>
+                        <p>Dal massimo dell'OOP a due linguaggi di ispirazione funzionali</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>E poi ci sono i linguaggi funzionali</h2>
+                        <p>...e multi paradigma</p>
+                    </section>
+                    <section>
+                        <p>Tanto per citarne alcuni:</p>
+                        <p>Haskell, Scala, Clojure, Elixir, Elm, Rust, Swift, Kotlin, F#, ecc...</p>
+                    </section>
+                    <section>
+                        <p><strong>Microsoft</strong></p>
+                        <p><strong>Apple</strong></p>
+                        <p><strong>Google</strong></p>
+                        <p><strong>Facebook</strong></p>
+                        <p>Hanno investito nella creazione di un linguaggio di programmazione funzionale</p>
+                    </section>
+			              <section>
+                        <h2>Trend</h2>
+                    </section>
+                    <section>
+                        <h3>Effort richeisto</h3>
+                        <image src="asset/grafici/job_posting.png" style="width:60%;height:60%" />
+                        <p>fonte: indeed</p>
+                    </section>
+                    <section>
+                        <h3>Salario/Esperienza</h3>
+                        <image src="asset/grafici/salario_esperienza_by_language.png" style="width:70%;height:70%" />
+                        <p>fonte: stack overflow</p>
+                    </section>
+                    <section>
+                        <h3>Gratificazione</h3>
+                        <image src="asset/grafici/gratification_by_language.png" style="width:70%;height:70%" />
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <p>Lambda-Roma</p>
+                        <h2>Programma di community</h2>
+                    </section>
+                    <section>
+                        <p>Programma della community</p>
+                        <h2>Lambda-Garden</h2>
+                        <p>Workshop alla scoperta del paradigma funzionale</p>
+                        <p>Tutti gli esercizi sono tenuti in Java, PHP, Javascript</p>
+                    </section>
+                    <section>
+                        <p>Programma della community</p>
+                        <h2>Lambda-Talks</h2>
+                        <p>Talk e approfondimenti sui linguaggi Funzionali</p>
+                        <p>Devop funzionale</p>
+                    </section>
+                    <section>
+                        <p>Programma della community</p>
+                        <h2>Lambda-Incidents</h2>
+                        <p>Meeting con altre community</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Hands On!</h2>
+                        <p>...e famolo un po' de funzionale no?</p>
+                    </section>
+                    <section>
+                        <h2>First Class Citizen</h2>
+                        <p>Ovvero funzioni come dato</p>
+                    </section>
+                    <section>
+                        <h3>Ok... Ma a che serve?</h3>
+                        <p>Favor composition over inheritance</p>
+                        <p>Dependecy Injection</p>
+                    </section>
+                    <section>
+                        <h3>...quindi?</h3>
+                        <p>Molti pattern della gang of four possono essere sintatizzati con First Class Citizen</p>
+                        <p>Lo strategy, il command, l'observer, ecc...</p>
+                    </section>
+                    <section>
+                        <p>In <em>gergo</em> funzionale tutto questo fa parte della</p>
+                        <h2>Function Composition</h2>
+                        <p>Ovvero la possibilità di comporre funzionalità complesse componenedole da oggetti semplici dal comportamento prevedibile</p>
+                        <p>Se tutto questo vi suona come un principio OOP avete iniziato a comprendere meglio la tesi Church-Turing :)</p>
+                    </section>
+                    <section>
+                        esempi
+                    </section>
+			              <section>
+                        <h2>Immutability</h2>
+                        <p>Un oggetto immutabile è un oggetto il cui stato non può essere cambiato dopo la sua creazione</p>
+                    </section>
+			              <section>
+                        <h2>Side-effects e side-causes</h2>
+                        <p>In una funzione:</p>
+                        <ul>
+                            <li><p>si intende come side effect un output <em>non esplicito</em></p></li>
+                            <li><p>si intende coem side cause un input <em>non esplicito</em></p></li>
+                            <li><p>generalmente il termine <em>side effects</em> è utilizzato sia sia per input e output <em>celati</em></p></li>
+                        </ul>
+                    </section>
+			              <section>
+                        <h2>Purity</h2>
+                        <p>Una funzione si dice pura:</p>
+                        <ul>
+                            <li><p>quando restituisce sempre lo stesso valore dagli stessi argomenti in input</p></li>
+                            <li><p>ossia quando è priva di side effects</p></li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+			              <section>
+                        <h2>Toolbox!</h2>
+                    </section>
+			              <section>
+                        <p>Concetti</p>
+                        <ul>
+                            <li>First Class Citizen</li>
+                            <li>Immutability</li>
+                            <li>Side-effects</li>
+                            <li>Funzioni Pure</li>
+                        </ul>
+                    </section>
+			              <section>
+                        <p>High Order Function base</p>
+                        <p>Le high order function sono funzioni che accettano almeno due parametri: una funzione anonima (lambda) e una lista di elementi</p>
+                        <p>La lambda sarà applicata a ogni elemento della lista</p>
+                        <p>La natura della high order function è determinata da come *decora* la lambda in input</p>
+                    </section>
+                    <section>
+                        <h2>Map</h2>
+                        <p class="fragment fade-in">black box array in entrata, lambda, array in uscita, lambda nella box</p>
+                    </section>
+                    <section>
+                        <h2>Filter</h2>
+                        <p class="fragment fade-in">black box: array in entrata, lambda, array in uscita, bool nella box</p>
+                    </section>
+                    <section>
+                        <h2>Reduce</h2>
+                        <p class="fragment fade-in">black box: array in entrata, lambda, tipo carry, tipo in uscita, lambda nel box</p>
+                    </section>
+                </section>
+                <section>
+                    <section id="katas">
+                        <h2>Katas</h2>
+                    </section>
+                    <section id="elencoUomini">
+                        <h2>Elenco Uomini</h2>
+                        "Tizio", "Caio", "Sempronio", "Mevio", "Filano" e "Calpurnio"
+                    </section>
+                    <section id="elencoDonne">
+                        <h2>Elenco Donne</h2>
+                        "Anna", "Carla", "Angela", "Chiara", "Emma", "Maria", "Sara"
+                    </section>
+                    <section id="ZeroA">
+                        <h2>Zero A</h2>
+                        Restituisci una lista contenente 1, 2, 3
+                    </section>
+                    <section id="ZeroAJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
   public List<Integer> kataZeroA(){
-    List<Integer> lista = new ArrayList<>();
-    for(Integer i=1; i<=3; i++){
-      lista.add(i);
-    }
-    return lista;
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroAPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            List<Integer> lista = new ArrayList<>();
+                            for(Integer i=1; i<=3; i++){
+                            lista.add(i);
+                            }
+                            return lista;
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroAPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
     /**
      * @return array
      */
@@ -409,16 +376,16 @@
 
         return $out;
     }
-    </code></pre>
-  </section>
-  <section id="ZeroAJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroAJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroA = () => {
           let out = [];
           for (let i = 1; i <= 3; i++) {
@@ -427,28 +394,28 @@
 
           return out;
       };
-    </code></pre>
-  </section>
-  <section id="ZeroAJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroAJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public List<Integer> kataZeroA() {
-        return Stream.of(1,2,3)
-                .collect(Collectors.toList());
-    }
-  </code></pre>
-  </section>
-  <section id="ZeroAPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            return Stream.of(1,2,3)
+                            .collect(Collectors.toList());
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroAPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return array
        */
@@ -456,16 +423,16 @@
       {
           return range(1, 3);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroAJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroAJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       import _ from 'lodash';
       import {
           List,
@@ -476,35 +443,35 @@
       export const ZeroA = () => {
           return _.range(1, 4);
       };
-    </code></pre>
-  </section>
-  <section id="ZeroB">
-  <h2>Zero B</h2>
-  Restituisci una lista contenente i numeri pari tra 1 e 10
-  </section>
-  <section id="ZeroBJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroB">
+                        <h2>Zero B</h2>
+                        Restituisci una lista contenente i numeri pari tra 1 e 10
+                    </section>
+                    <section id="ZeroBJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public List<Integer> kataZeroB(){
-    List<Integer> lista = new ArrayList<>();
-    for(Integer i=2; i<=10; i+=2){
-      lista.add(i);
-    }
-    return lista;
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroBPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            List<Integer> lista = new ArrayList<>();
+                            for(Integer i=2; i<=10; i+=2){
+                            lista.add(i);
+                            }
+                            return lista;
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroBPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return array
        */
@@ -516,16 +483,16 @@
           }
           return $out;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroBJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroBJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroB = () => {
           let out = [];
           for(let i=2; i < 10; i+=2){
@@ -534,30 +501,30 @@
 
           return out;
       };
-    </code></pre>
-  </section>
-  <section id="ZeroBJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroBJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public List<Integer> kataZeroB() {
-        return Stream.iterate(2, i -> i + 2 )
-                .limit(50l)
-                .filter(i -> i <= 10)
-                .collect(Collectors.toList());
-    }
-  </code></pre>
-  </section>
-  <section id="ZeroBPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            return Stream.iterate(2, i -> i + 2 )
+                            .limit(50l)
+                            .filter(i -> i <= 10)
+                            .collect(Collectors.toList());
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroBPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return array
        */
@@ -565,48 +532,48 @@
       {
           return range(0, 10, 2);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroBJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroBJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroB = () => {
           return _.range(2, 10, 2);
       };
-    </code></pre>
-  </section>
-  <section id="ZeroC">
-  <h2>Zero C</h2>
-  Restituisci una lista contenente i multipli di 7 tra 1 e 100
-  </section>
-  <section id="ZeroCJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroC">
+                        <h2>Zero C</h2>
+                        Restituisci una lista contenente i multipli di 7 tra 1 e 100
+                    </section>
+                    <section id="ZeroCJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public List<Integer> kataZeroC(){
-    List<Integer> lista = new ArrayList<>();
-    for(Integer i=0; i<=100; i+=7){
-      lista.add(i);
-    }
-    return lista;
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroCPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            List<Integer> lista = new ArrayList<>();
+                            for(Integer i=0; i<=100; i+=7){
+                            lista.add(i);
+                            }
+                            return lista;
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroCPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return array
        */
@@ -619,16 +586,16 @@
           return $out;
       }
 
-    </code></pre>
-  </section>
-  <section id="ZeroCJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroCJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroC = () => {
           let out = [];
           for(let i=7; i <= 100; i+=7){
@@ -637,30 +604,30 @@
 
           return out;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroCJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroCJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public List<Integer> kataZeroC() {
-        return Stream.iterate(0, i -> i + 7 )
-                .limit(50l)
-                .filter(i -> i < 100)
-                .collect(Collectors.toList());
-    }
-  </code></pre>
-  </section>
-  <section id="ZeroCPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            return Stream.iterate(0, i -> i + 7 )
+                            .limit(50l)
+                            .filter(i -> i < 100)
+                            .collect(Collectors.toList());
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroCPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return array
        */
@@ -668,51 +635,51 @@
       {
           return range(7, 100, 7);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroCJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroCJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroC = () => {
           return _.range(7, 100, 7);
       };
-    </code></pre>
-  </section>
-  <section id="ZeroD">
-  <h2>Zero D</h2>
-  Dall'elenco degli uomini, restituire una lista con tutti i nomi che cominciano per "C"
-  </section>
-  <section id="ZeroDJavaImperativo"
-                   data-background-color="saddlebrown"
-                  data-background-image="asset/logo_java.png"
-                  data-background-size="200px"
-                  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroD">
+                        <h2>Zero D</h2>
+                        Dall'elenco degli uomini, restituire una lista con tutti i nomi che cominciano per "C"
+                    </section>
+                    <section id="ZeroDJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public List<String> kataZeroD(){
-    List<String> uomini = ELENCO_UOMINI;
-    List<String> filtrati = new ArrayList<>();
-    for(String uomo : uomini){
-      if(uomo.startsWith("C")){
-        filtrati.add(uomo);
-      }
-    }
-    return filtrati;
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroDPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            List<String> uomini = ELENCO_UOMINI;
+                            List<String> filtrati = new ArrayList<>();
+                            for(String uomo : uomini){
+                            if(uomo.startsWith("C")){
+                            filtrati.add(uomo);
+                            }
+                            }
+                            return filtrati;
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroDPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param $names
        * @return array
@@ -727,16 +694,16 @@
           }
           return $out;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroDJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroDJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroD = uomini => {
           let out = [];
           for(let i=0; i <= uomini.length; i++){
@@ -747,29 +714,29 @@
 
           return out;
       };
-    </code></pre>
-  </section>
-  <section id="ZeroDJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroDJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public List<String> kataZeroD() {
-        return ELENCO_UOMINI.stream()
-                .filter(s -> s.startsWith("C"))
-                .collect(Collectors.toList());
-    }
-  </code></pre>
-  </section>
-  <section id="ZeroDPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            return ELENCO_UOMINI.stream()
+                            .filter(s -> s.startsWith("C"))
+                            .collect(Collectors.toList());
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroDPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param array $menNames
        * @return array
@@ -780,32 +747,32 @@
               return strtolower($item[0]) === 'c';
           }));
       }
-    </code></pre>
-  </section>
-  <section id="ZeroDJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroDJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroD = uomini => {
           return _.filter(uomini, (s) => s.startsWith("C"));
       };
-    </code></pre>
-  </section>
-  <section id="ZeroE">
-  <h2>Zero E</h2>
-  Calcolare la media dei multipli di 8 compresi tra 1 e 100
-  </section>
-  <section id="ZeroEJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroE">
+                        <h2>Zero E</h2>
+                        Calcolare la media dei multipli di 8 compresi tra 1 e 100
+                    </section>
+                    <section id="ZeroEJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public Double kataZeroE(){
     double numeroMultipli = 0;
     double sommaMultipli = 0;
@@ -815,15 +782,15 @@
     }
     return sommaMultipli / numeroMultipli;
   }
-  </code></pre>
-  </section>
-  <section id="ZeroEPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroEPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return int
        */
@@ -837,16 +804,16 @@
           }
           return $out / $counter;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroEJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroEJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroE = () => {
           let out = [];
           let count = 0;
@@ -857,15 +824,15 @@
           }
           return sum/count;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroEJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroEJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public Double kataZeroE() {
         return DoubleStream.iterate(8, i -> i + 8.0D)
                 .limit(100l)
@@ -873,15 +840,15 @@
                 .average()
                 .getAsDouble();
     }
-  </code></pre>
-  </section>
-  <section id="ZeroEPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroEPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return int
        */
@@ -890,32 +857,32 @@
           $range = range(8, 100, 8);
           return array_sum($range) / count($range);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroEJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroEJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroE = () => {
           return _.mean(_.range(8, 100, 8));
       };
-    </code></pre>
-  </section>
-  <section id="ZeroF">
-  <h2>Zero F</h2>
-  Calcolare la somma dei multipli di 6 compresi tra 1 e 1000
-  </section>
-  <section id="ZeroFJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroF">
+                        <h2>Zero F</h2>
+                        Calcolare la somma dei multipli di 6 compresi tra 1 e 1000
+                    </section>
+                    <section id="ZeroFJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public int kataZeroF(){
     int sommaMultipli = 0;
     for(int i=6; i<=1000; i+=6){
@@ -923,15 +890,15 @@
     }
     return sommaMultipli;
   }
-  </code></pre>
-  </section>
-  <section id="ZeroFPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroFPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return int
        */
@@ -943,16 +910,16 @@
           }
           return $sum;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroFJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroFJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroF = () => {
           let sum = 0;
           for(let i=6; i<1000; i+=6){
@@ -960,30 +927,30 @@
           }
           return sum;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroFJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroFJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public int kataZeroF() {
         return IntStream.iterate(0, i -> i + 6)
                 .limit(1000l)
                 .filter(i -> i < 1000)
                 .sum();
     }
-  </code></pre>
-  </section>
-  <section id="ZeroFPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroFPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return int
        */
@@ -991,46 +958,46 @@
       {
           return array_sum(range(6, 1000, 6));
       }
-    </code></pre>
-  </section>
-  <section id="ZeroFJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroFJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroF = () => {
           return _.sum(_.range(6, 1000, 6));
       };
-    </code></pre>
-  </section>
-  <section id="ZeroG">
-  <h2>Zero G</h2>
-  Dall'elenco degli uomini, restituisci una lista con i nomi ordinati alfabeticamente
-  </section>
-  <section id="ZeroGJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroG">
+                        <h2>Zero G</h2>
+                        Dall'elenco degli uomini, restituisci una lista con i nomi ordinati alfabeticamente
+                    </section>
+                    <section id="ZeroGJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public List<String> kataZeroG(){
-    List<String> uomini = new ArrayList<>(ELENCO_UOMINI);
-    Collections.sort(uomini);
-    return uomini;
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroGPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            List<String> uomini = new ArrayList<>(ELENCO_UOMINI);
+                            Collections.sort(uomini);
+                            return uomini;
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroGPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param $menNames
        * @return array
@@ -1040,43 +1007,43 @@
           sort($menNames);
           return $menNames;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroGJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroGJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroG = uomini => {
           let copiaUomini = uomini.slice();
           return copiaUomini.sort();
       }
-    </code></pre>
-  </section>
-  <section id="ZeroGJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroGJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public List<String> kataZeroG() {
-        return ELENCO_UOMINI.stream()
-                .sorted()
-                .collect(Collectors.toList());
-    }
-  </code></pre>
-  </section>
-  <section id="ZeroGPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            return ELENCO_UOMINI.stream()
+                            .sorted()
+                            .collect(Collectors.toList());
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroGPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param array $menNames
        * @return array
@@ -1087,52 +1054,52 @@
           sort($menNamesToSort);
           return $menNamesToSort;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroGJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroGJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroG = uomini => {
           return List(uomini).sort();
       };
-    </code></pre>
-  </section>
-  <section id="ZeroH">
-  <h2>Zero H</h2>
-  Tra i numeri da 1 a 1000 trovarne uno qualunque divisibile per 41
-  </section>
-  <section id="ZeroHJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroH">
+                        <h2>Zero H</h2>
+                        Tra i numeri da 1 a 1000 trovarne uno qualunque divisibile per 41
+                    </section>
+                    <section id="ZeroHJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public int kataZeroH(){
     List<Integer> divisori = new ArrayList<>();
-    for(int i=2; i<=100; i++){
-      if(i % 41 == 0){
-        divisori.add(41);
-      }
-    }
-    return divisori.get(
-      (new Random()).nextInt(divisori.size())
-    );
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroHPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            for(int i=2; i<=100; i++){
+                            if(i % 41 == 0){
+                            divisori.add(41);
+                            }
+                            }
+                            return divisori.get(
+                            (new Random()).nextInt(divisori.size())
+                            );
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroHPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return int
        */
@@ -1145,16 +1112,16 @@
           $randomicIndex = rand(0, sizeof($out) - 1);
           return $out[$randomicIndex];
       }
-    </code></pre>
-  </section>
-  <section id="ZeroHJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroHJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroH = () => {
           let out = [];
           for(let i=41;i<1000;i+=41){
@@ -1163,15 +1130,15 @@
           let j = Math.floor(Math.random()*out.length);
           return out[j];
       }
-    </code></pre>
-  </section>
-  <section id="ZeroHJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroHJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public int kataZeroH() {
         return IntStream.range(0,1000)
                 .parallel()
@@ -1179,15 +1146,15 @@
                 .findAny()
                 .getAsInt();
     }
-  </code></pre>
-  </section>
-  <section id="ZeroHPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroHPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @return int
        */
@@ -1196,50 +1163,50 @@
           $range = range(41, 1000, 41);
           return $range[array_rand($range)];
       }
-    </code></pre>
-  </section>
-  <section id="ZeroHJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroHJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroH = () => {
           const range = Range(41, 1000, 41);
           return range.get(_.random(0, range.count() - 1));
       };
-    </code></pre>
-  </section>
-  <section id="ZeroI">
-  <h2>Zero I</h2>
-  Dall'elenco degli uomini, restituisci la stringa che li elenca intervallati da virgola e spazio
-  </section>
-  <section id="ZeroIJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroI">
+                        <h2>Zero I</h2>
+                        Dall'elenco degli uomini, restituisci la stringa che li elenca intervallati da virgola e spazio
+                    </section>
+                    <section id="ZeroIJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public String kataZeroI(){
     List<String> uomini = ELENCO_UOMINI;
-    StringJoiner joiner = new StringJoiner(", ");
-    for(String uomo : uomini){
-      joiner.add(uomo);
-    }
-    return joiner.toString();
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroIPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            StringJoiner joiner = new StringJoiner(", ");
+                            for(String uomo : uomini){
+                            joiner.add(uomo);
+                            }
+                            return joiner.toString();
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroIPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param $menNames
        * @return string
@@ -1248,16 +1215,16 @@
       {
           return implode(", ", $menNames);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroIJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroIJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroI = uomini => {
           let out = "";
           for(let i=0; i < uomini.length; i++){
@@ -1268,29 +1235,29 @@
           }
           return out;
       };
-    </code></pre>
-  </section>
-  <section id="ZeroIJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroIJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public String kataZeroI() {
         return ELENCO_UOMINI
                 .stream()
                 .collect(Collectors.joining(", "));
     }
-  </code></pre>
-  </section>
-  <section id="ZeroIPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroIPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param array $menNames
        * @return string
@@ -1299,46 +1266,46 @@
       {
           return implode(', ', $menNames);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroIJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroIJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroI = uomini => {
           return List(uomini).join(', ');
       };
-    </code></pre>
-  </section>
-  <section id="ZeroJ">
-  <h2>Zero J</h2>
-  Dall'elenco degli uomini, creare un insieme (set)
-  </section>
-  <section id="ZeroJJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroJ">
+                        <h2>Zero J</h2>
+                        Dall'elenco degli uomini, creare un insieme (set)
+                    </section>
+                    <section id="ZeroJJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public Set<String> kataZeroJ(){
-    List<String> uomini = ELENCO_UOMINI;
-    Set<String> insiemeUomini = new HashSet(uomini);
-    return insiemeUomini;
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroJPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            List<String> uomini = ELENCO_UOMINI;
+                            Set<String> insiemeUomini = new HashSet(uomini);
+                            return insiemeUomini;
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroJPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param $menNames
        * @return array
@@ -1347,39 +1314,39 @@
       {
           return array_unique($menNames);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroJJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroJJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       // TODO
-    </code></pre>
-  </section>
-  <section id="ZeroJJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroJJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public Set<String> kataZeroJ() {
-        return ELENCO_UOMINI.stream()
-                .collect(Collectors.toSet());
-    }
-  </code></pre>
-  </section>
-  <section id="ZeroJPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            return ELENCO_UOMINI.stream()
+                            .collect(Collectors.toSet());
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroJPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param array $menNames
        * @return array
@@ -1388,57 +1355,57 @@
       {
           return array_unique($menNames);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroJJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroJJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroJ = uomini => {
           return Set(uomini);
       };
-    </code></pre>
-  </section>
-  <section id="ZeroK">
-  <h2>Zero K</h2>
-  Dall'elenco delle donne, restituisci una mappa in cui i nomi sono raggruppati per lunghezza
-  </section>
-  <section id="ZeroKJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code data-trim data-noescape class="java" style="height: 150%">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroK">
+                        <h2>Zero K</h2>
+                        Dall'elenco delle donne, restituisci una mappa in cui i nomi sono raggruppati per lunghezza
+                    </section>
+                    <section id="ZeroKJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code data-trim data-noescape class="java" style="height: 150%">
   public Map&lt;Integer,List&lt;String>> kataZeroK(){
     List<String> donne = ELENCO_DONNE;
-    Map&lt;Integer,List&lt;String>> map = new HashMap<>();
-    for(String donna : donne){
-      int lunghezza = donna.length();
-      if(map.containsKey(lunghezza)){
-        List<String> list = map.get(lunghezza);
-        list.add(donna);
-      }else{
-        List<String> list = new ArrayList<>();
-        list.add(donna);
-        map.put(lunghezza, list);
-      }
-    }
-    return map;
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroKPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            Map&lt;Integer,List&lt;String>> map = new HashMap<>();
+                            for(String donna : donne){
+                            int lunghezza = donna.length();
+                            if(map.containsKey(lunghezza)){
+                            List<String> list = map.get(lunghezza);
+                            list.add(donna);
+                            }else{
+                            List<String> list = new ArrayList<>();
+                            list.add(donna);
+                            map.put(lunghezza, list);
+                            }
+                            }
+                            return map;
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroKPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param $womenNames
        * @return array
@@ -1455,16 +1422,16 @@
           }
           return $out;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroKJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroKJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroK = donne => {
           let out = {};
           for(let i=0; i < donne.length; i++){
@@ -1477,28 +1444,28 @@
           }
           return out;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroKJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroKJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public Map&lt;Integer, List&lt;String>> kataZeroK() {
         return ELENCO_DONNE.stream()
                 .collect(Collectors.groupingBy(s -> s.length()));
     }
-  </code></pre>
-  </section>
-  <section id="ZeroKPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroKPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param array $womenNames
        * @return array
@@ -1513,49 +1480,49 @@
               return $carry;
           }, []);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroKJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroKJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroK = donne => {
           return List(donne).groupBy(x => x.length.toString());
       };
-    </code></pre>
-  </section>
-  <section id="ZeroL">
-  <h2>Zero L</h2>
-  Dall'elenco delle donne, restituisci una lista contenente le lunghezze dei loro nomi
-  </section>
-  <section id="ZeroLJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroL">
+                        <h2>Zero L</h2>
+                        Dall'elenco delle donne, restituisci una lista contenente le lunghezze dei loro nomi
+                    </section>
+                    <section id="ZeroLJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public List<Integer> kataZeroL(){
-    List<String> donne = ELENCO_DONNE;
-    List<Integer> list = new ArrayList<>();
-    for(String donna : donne){
-      list.add( donna.length() );
-    }
-    return list;
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroLPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            List<String> donne = ELENCO_DONNE;
+                            List<Integer> list = new ArrayList<>();
+                            for(String donna : donne){
+                            list.add( donna.length() );
+                            }
+                            return list;
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroLPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param array $womenNames
        * @return array
@@ -1568,46 +1535,46 @@
           }
           return $out;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroLJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroLJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroL = donne => {
           let out = [];
           for(let i=0; i<donne.length; i++){
-              out.push(donne[i].length);
-          }
-          return out;
-      }
-    </code></pre>
-  </section>
-  <section id="ZeroLJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                                       out.push(donne[i].length);
+                                       }
+                                       return out;
+                                       }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroLJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public List<Integer> kataZeroL() {
-        return ELENCO_DONNE.stream()
-                .map(s -> s.length())
-                .collect(Collectors.toList());
-    }
-  </code></pre>
-  </section>
-  <section id="ZeroLPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            return ELENCO_DONNE.stream()
+                            .map(s -> s.length())
+                            .collect(Collectors.toList());
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroLPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param array $womenNames
        * @return array
@@ -1618,50 +1585,50 @@
               return strlen($item);
           }, $womenNames);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroLJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroLJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroL = donne => {
           return List(donne).map(x => x.length);
       };
-    </code></pre>
-  </section>
-  <section id="ZeroM">
-  <h2>Zero M</h2>
-  Dall'elenco delle donne, restituisci una lista contenente le iniziali dei loro nomi
-  </section>
-  <section id="ZeroMJavaImperativo"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione imperativa in Java</h3>
-  <pre><code class="java" data-trim data-noescape>
+                        </code></pre>
+                    </section>
+                    <section id="ZeroM">
+                        <h2>Zero M</h2>
+                        Dall'elenco delle donne, restituisci una lista contenente le iniziali dei loro nomi
+                    </section>
+                    <section id="ZeroMJavaImperativo"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in Java</h3>
+                        <pre><code class="java" data-trim data-noescape>
   public List<String> kataZeroM(){
-    List<String> donne = ELENCO_DONNE;
-    List<String> list = new ArrayList<>();
-    for(String donna : donne){
-      String iniziale = donna.substring(0,1);
-      list.add(iniziale);
-    }
-    return list;
-  }
-  </code></pre>
-  </section>
-  <section id="ZeroMPHPImperativo"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione imperativa in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            List<String> donne = ELENCO_DONNE;
+                            List<String> list = new ArrayList<>();
+                            for(String donna : donne){
+                            String iniziale = donna.substring(0,1);
+                            list.add(iniziale);
+                            }
+                            return list;
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroMPHPImperativo"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione imperativa in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param array $womenNames
        * @return array
@@ -1674,46 +1641,46 @@
           }
           return $out;
       }
-    </code></pre>
-  </section>
-  <section id="ZeroMJSImperativo"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione imperativa in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroMJSImperativo"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione imperativa in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroM = donne => {
           let out = [];
           for(let i=0; i<donne.length; i++){
-              out.push(donne[i][0]);
-          }
-          return out;
-      }
-    </code></pre>
-  </section>
-  <section id="ZeroMJavaFunzionale"
-  data-background-color="saddlebrown"
-  data-background-image="asset/logo_java.png"
-  data-background-size="200px"
-  data-background-position="10px 10px">
-  <h3>Soluzione funzionale in Java</h3>
-  <pre><code data-trim data-noescape class="java">
+                                       out.push(donne[i][0]);
+                                       }
+                                       return out;
+                                       }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroMJavaFunzionale"
+                             data-background-color="saddlebrown"
+                             data-background-image="asset/logo_java.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in Java</h3>
+                        <pre><code data-trim data-noescape class="java">
     public List<String> kataZeroM() {
-        return ELENCO_DONNE.stream()
-                .map(s -> s.substring(0,1))
-                .collect(Collectors.toList());
-    }
-  </code></pre>
-  </section>
-  <section id="ZeroMPHPFunzionale"
-    data-background-color="#777cb1"
-    data-background-image="asset/logo_php.png"
-    data-background-size="200px"
-    data-background-position="10px 10px">
-    <h3>Soluzione funzionale in PHP</h3>
-    <pre><code data-trim data-noescape class="php">
+                            return ELENCO_DONNE.stream()
+                            .map(s -> s.substring(0,1))
+                            .collect(Collectors.toList());
+                            }
+                        </code></pre>
+                    </section>
+                    <section id="ZeroMPHPFunzionale"
+                             data-background-color="#777cb1"
+                             data-background-image="asset/logo_php.png"
+                             data-background-size="200px"
+                             data-background-position="10px 10px">
+                        <h3>Soluzione funzionale in PHP</h3>
+                        <pre><code data-trim data-noescape class="php">
       /**
        * @param $womenNames
        * @return array
@@ -1724,41 +1691,41 @@
               return $item[0];
           }, $womenNames);
       }
-    </code></pre>
-  </section>
-  <section id="ZeroMJSFunzionale"
-  data-background-color="#f4dc38"
-  data-background-color="#f4dc38"
-  data-background-image="asset/logo_js.png"
-  data-background-size="200px"
-  data-background-position="0px 0px">
-    <h3>Soluzione funzionale in JavaScript</h3>
-    <pre><code data-trim data-noescape class="javascript">
+                        </code></pre>
+                    </section>
+                    <section id="ZeroMJSFunzionale"
+                             data-background-color="#f4dc38"
+                             data-background-color="#f4dc38"
+                             data-background-image="asset/logo_js.png"
+                             data-background-size="200px"
+                             data-background-position="0px 0px">
+                        <h3>Soluzione funzionale in JavaScript</h3>
+                        <pre><code data-trim data-noescape class="javascript">
       export const ZeroM = donne => {
           return List(donne).map(x => x[0]);
       };
-    </code></pre>
-  </section>
-  </section>
-  </div>
-  </div>
+                        </code></pre>
+                    </section>
+                </section>
+            </div>
+        </div>
 
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
 
-  <script>
-  // More info about config & dependencies:
-  // - https://github.com/hakimel/reveal.js#configuration
-  // - https://github.com/hakimel/reveal.js#dependencies
-  Reveal.initialize({
-  history: true,
-  dependencies: [
-  { src: 'plugin/markdown/marked.js' },
-  { src: 'plugin/markdown/markdown.js' },
-  { src: 'plugin/notes/notes.js', async: true },
-  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-  ]
-  });
-  </script>
-  </body>
+        <script>
+         // More info about config & dependencies:
+         // - https://github.com/hakimel/reveal.js#configuration
+         // - https://github.com/hakimel/reveal.js#dependencies
+         Reveal.initialize({
+             history: true,
+             dependencies: [
+                 { src: 'plugin/markdown/marked.js' },
+                 { src: 'plugin/markdown/markdown.js' },
+                 { src: 'plugin/notes/notes.js', async: true },
+                 { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+             ]
+         });
+        </script>
+    </body>
 </html>
