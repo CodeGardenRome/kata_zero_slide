@@ -206,7 +206,7 @@
                         <h2>Trend</h2>
                     </section>
                     <section>
-                        <h3>Effort richeisto</h3>
+                        <h3>Job Posting</h3>
                         <image src="asset/grafici/job_posting.png" style="width:60%;height:60%" />
                         <p>fonte: indeed</p>
                     </section>
@@ -254,7 +254,7 @@
                     </section>
                     <section>
                         <h3>Ok... Ma a che serve?</h3>
-                        <p>Favor composition over inheritance</p>
+                        <p>Composition over inheritance</p>
                         <p>Dependecy Injection</p>
                     </section>
                     <section>
@@ -263,17 +263,54 @@
                         <p>Lo strategy, il command, l'observer, ecc...</p>
                     </section>
                     <section>
-                        <p>In <em>gergo</em> funzionale tutto questo fa parte della</p>
+                        <p>In <em>gergo</em> funzionale si parla di</p>
                         <h2>Function Composition</h2>
-                        <p>Ovvero la possibilità di comporre funzionalità complesse componenedole da oggetti semplici dal comportamento prevedibile</p>
+                        <p>quando si creano funzionalità complesse componenedo funzioni semplici dal comportamento prevedibile</p>
                         <p>Se tutto questo vi suona come un principio OOP avete iniziato a comprendere meglio la tesi Church-Turing :)</p>
                     </section>
                     <section>
-                        esempi
+                        <p>Un piccolo esempio</p>
+                        <pre><code data-trim data-noescape class="php">
+array_values(array_filter($menNames, function ($item) {
+            return ...
+        }));
+                        </code></pre>
                     </section>
 			              <section>
                         <h2>Immutability</h2>
-                        <p>Un oggetto immutabile è un oggetto il cui stato non può essere cambiato dopo la sua creazione</p>
+                        <p>Lo stato di un oggetto immutable non può essere alterato dopo la creazione</p>
+                    </section>
+                    <section>
+                        <p>Alan Key</p>
+                        <image src="asset/alan_key.jpg" style="width:75%;height:75%"/>
+                    </section>
+                    <section>
+                        <p>Martin Fowler</p>
+                        <image src="asset/martin_fowler.jpg" style="width:30%;height:30%"/>
+                        <h2>Value objects should be immutable</h2>
+                        <p>https://martinfowler.com/bliki/ValueObject.html</p>
+                    </section>
+                    <section>
+                        <p>Defensive copying</p>
+                        <pre><code data-trim data-neoscape class="java">
+public final class Planet {
+
+  private final Date fDateOfDiscovery;
+
+  public Planet (double aMass, String aName, Date aDateOfDiscovery) {
+     fMass = aMass;
+     fName = aName;
+     fDateOfDiscovery = new Date(aDateOfDiscovery.getTime());
+  }
+
+  public Date getDateOfDiscovery() {
+    return new Date(fDateOfDiscovery.getTime());
+  }
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>Concurrency</h2>
                     </section>
 			              <section>
                         <h2>Side-effects e side-causes</h2>
