@@ -1444,8 +1444,14 @@ public class PureSum {
                              data-background-position="0px 0px">
                         <h3>Soluzione imperativa in JavaScript</h3>
                         <pre><code data-trim data-noescape class="javascript">
-      // TODO
+      export var ZeroJ = uomini => {
+          return new Set(uomini);
+      }
+
                         </code></pre>
+                        <aside class="notes">
+                            <p>teoricamente non c'è un modo in es5 di farlo e comunque il set è mutable</p>
+                        </aside>
                     </section>
                     <section id="ZeroJJavaFunzionale"
                              data-background-color="saddlebrown"
@@ -1489,6 +1495,9 @@ public class PureSum {
           return Set(uomini);
       };
                         </code></pre>
+                        <aside class="notes">
+                            <p>l'oggetto "Set" ritornato in questa fuznione è il Set immutable di Immutable js</p>
+                         </aside>
                     </section>
                     <section id="ZeroK">
                         <h2>Zero K</h2>
