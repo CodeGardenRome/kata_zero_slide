@@ -24,9 +24,12 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>
-                    <p>Lambda Garden</p>
-                    <h1>Workshop 1</h1>
+                <section
+                    data-background-image="asset/lambda_logo.png"
+                    data-background-size="75% auto"
+                    data-background-position="center top"
+                >
+                    <h1 style="margin-top:5em">Lambda Garden 1</h1>
                 </section>
                 <section>
                     <section>
@@ -58,6 +61,9 @@
                         <image src="asset/church_alonzo.jpg" style="width:41%;height:41%" />
                         <image src="asset/alan_turing.jpg" style="width:30%;height:30%" />
                         <p><em>Every effectively calculable function is a computable function</em></p>
+                        <aside class="notes">
+                            <p>da qui si evince che deve esistere una macchina di turing per il calcolo lambda, e quindi che i due modelli sono equivalenti</p>
+                        </aside>
                     </section>
                     <section>
                         <h2>John Von Neumann</h2>
@@ -136,7 +142,7 @@
                     </section>
                 </section>
                 <section>
-                    <section><h2>Il funzionale a casa nostra...</h2></section>
+                    <section><h2>Il funzionale è già tra noi...</h2></section>
                     <section
                         data-background-color="#f4dc38"
                         data-background-image="asset/logo_js.png"
@@ -182,7 +188,9 @@
                     >
                         <h2>Da Java e Objective-C...</h2>
                         <h2>...a Kotlin e Swift</h2>
-                        <p>Dal massimo dell'OOP a due linguaggi di ispirazione funzionali</p>
+                        <aside class="notes">
+                            <p>Dal massimo dell'OOP a due linguaggi di ispirazione funzionali</p>
+                        </aside>
                     </section>
                 </section>
                 <section>
@@ -288,8 +296,9 @@
 	                      </aside>
                     </section>
                     <section>
-                        <p>In <em>gergo</em> funzionale si parla di</p>
+                        <p>In <em>gergo</em> funzionale si parla di:</p>
                         <h2>Function Composition</h2>
+                        <image src="asset/function_composition.jpg" style="width:30%;height:30%"/>
                         <aside class="notes">
                             <p>quando si creano funzionalità complesse componenedo funzioni semplici dal comportamento prevedibile</p>
                             <p>Se tutto questo vi suona come un principio OOP avete iniziato a comprendere meglio la tesi Church-Turing :)</p>
@@ -298,9 +307,19 @@
                     <section>
                         <p>Un piccolo esempio</p>
                         <pre><code data-trim data-noescape class="php">
-array_values(array_filter($items, function ($item) {
-            return ...
-        }));
+const a = "Lambda";
+const b = "Roma";
+
+function concat(a, b) {
+    return `${a}-${b}`;
+}
+
+function len(string) {
+    return string.length;
+}
+
+len(concat(a, b)); //11
+concat(len(a), len(b));  //"6-4"
                         </code></pre>
                     </section>
 			              <section>
@@ -472,6 +491,10 @@ public class PureSum {
                 <section>
                     <section id="katas">
                         <h2>Katas</h2>
+                    </section>
+                    <section>
+                        <h2>Repository dei test</h2>
+                        <p><a href="https://github.com/CodeGardenRome/kata-zero-test">https://github.com/CodeGardenRome/kata-zero-test</a></p>
                     </section>
                     <section id="elencoUomini">
                         <h2>Elenco Uomini</h2>
